@@ -1,4 +1,5 @@
 import { SectionHeader } from "../components/SectionHeader";
+import { siteAssets } from "../lib/assets";
 
 export function About() {
   return (
@@ -7,8 +8,8 @@ export function About() {
 
       <div className="max-w-5xl mx-auto px-4 mt-16 pb-16">
         <div className="flex flex-col md:flex-row gap-8 mb-16 justify-center">
-           <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80" alt="Rossana" className="w-64 h-64 object-cover rounded-full mx-auto md:mx-0 grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" />
-           <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Working" className="w-64 h-64 object-cover mx-auto md:mx-0 grayscale opacity-80" />
+           <img src={siteAssets.aboutPortrait} alt="Rossana" className="w-64 h-64 object-cover rounded-full mx-auto md:mx-0 grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" />
+           <img src={siteAssets.titleMark} alt="Working" className="w-64 h-64 object-cover mx-auto md:mx-0 grayscale opacity-80" />
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 text-[#ccc] font-light leading-loose text-justify">
@@ -46,7 +47,10 @@ export function About() {
         </div>
 
         <div className="mt-24 flex justify-center">
-           <img src="https://images.unsplash.com/photo-1473216853240-bc5e03239a06?w=600&h=300&fit=crop&q=80" alt="Flower abstract" className="w-full max-w-2xl object-cover mix-blend-lighten opacity-60 hover:opacity-100 transition-opacity duration-1000" />
+           <img src={siteAssets.aboutFlower} alt="Flower abstract" className="w-full max-w-2xl object-cover mix-blend-lighten opacity-60 hover:opacity-100 transition-opacity duration-1000" />
+        </div>
+        <div className="mt-6 flex justify-center">
+           <img src={siteAssets.aboutDarkFlower} alt="Dark flower" className="w-full max-w-xl object-cover opacity-70" />
         </div>
       </div>
     </section>

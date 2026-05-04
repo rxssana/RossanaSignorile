@@ -1,4 +1,5 @@
 import { SectionHeader } from "../components/SectionHeader";
+import { siteAssets } from "../lib/assets";
 
 export function Birdland() {
   return (
@@ -24,10 +25,10 @@ export function Birdland() {
           <p className="text-sm">Materials: papier maché, bed sheets, black wax, acrylics, charcoal, oil pastels, oil chalks.</p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-8">
-            {"12345678".split("").map((_, i) => (
+            {siteAssets.birdlandGrid.map((img, i) => (
               <img 
                 key={i}
-                src={`https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=300&h=300&fit=crop&q=80&sig=${i}`}
+                src={img}
                 alt="Birdland Exhibit"
                 className="w-full aspect-square object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
               />
@@ -45,10 +46,10 @@ export function Birdland() {
              to the wood and objects attached to it.
            </p>
            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-             {"123".split("").map((_, i) => (
+             {siteAssets.shortStills.slice(0, 3).map((img, i) => (
               <img 
                 key={i}
-                src={`https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=400&q=80&sig=${i}`}
+                src={img}
                 alt="Teli sonori"
                 className="w-full h-auto object-cover opacity-80 hover:opacity-100 transition-opacity"
               />
@@ -68,10 +69,10 @@ export function Birdland() {
              therefore could not ring and the angle of human noise, where Damiano Tata had a sound performance using organ pipes.
            </p>
            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-             {"1234".split("").map((_, i) => (
+             {siteAssets.birdlandGrid.slice(0, 4).map((img, i) => (
               <img 
                 key={i}
-                src={`https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=300&h=300&fit=crop&q=80&sig=${i}`}
+                src={img}
                 alt="Every bird dies"
                 className="w-full aspect-square object-cover grayscale opacity-70"
               />
@@ -86,8 +87,8 @@ export function Birdland() {
             <h4 className="text-xl font-serif text-white mb-2">3. Birdland Magic Box</h4>
             <p className="text-sm font-light text-[#aaa] mb-4">A sort of noise box made of copper paper. It contains objects inside and a string made with my hair, it makes noise when connected to a mic.</p>
             <div className="flex gap-4 overflow-x-auto pb-4">
-              {"123".split("").map((_, i) => (
-                <img key={i} src={`https://images.unsplash.com/photo-1505635552518-3448ff116afe?w=200&h=200&fit=crop&q=80&sig=${i}`} alt="Box" className="w-48 h-48 object-cover flex-shrink-0" />
+              {siteAssets.zine.slice(0, 3).map((img, i) => (
+                <img key={i} src={img} alt="Box" className="w-48 h-48 object-cover flex-shrink-0" />
               ))}
             </div>
           </div>
@@ -96,8 +97,8 @@ export function Birdland() {
             <h4 className="text-xl font-serif text-white mb-2">4. Birdthatcannotsing</h4>
             <p className="text-sm font-light text-[#aaa] mb-4">A bird that cannot sing becomes a hummingbird, with its wings so light, barely noticeable, but a beauty so loud and a beak so long that it sings with its presence.<br/>Illustrations and other creations.</p>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-2">
-               {"123456789".split("").map((_, i) => (
-                <img key={i} src={`https://images.unsplash.com/photo-1534447677768-be436bb09401?w=200&h=200&fit=crop&q=80&sig=${i}`} alt="Illustration" className="w-full aspect-square object-cover mix-blend-luminosity hover:mix-blend-normal" />
+               {[...siteAssets.birdlandGrid, siteAssets.zine[0]].map((img, i) => (
+                <img key={i} src={img} alt="Illustration" className="w-full aspect-square object-cover mix-blend-luminosity hover:mix-blend-normal" />
               ))}
             </div>
           </div>
@@ -106,8 +107,8 @@ export function Birdland() {
             <h4 className="text-xl font-serif text-white mb-2">5. Theatre of the starving angel</h4>
             <p className="text-sm font-light text-[#aaa] mb-4">A theater made of wood, which contains some creatures made of mud, wood pieces, and other magical objects. The walls are changeable and there's a long stair coming out of the theatre. The theatre folds like a box, to be carried everywhere.</p>
             <div className="grid grid-cols-2 gap-4">
-               {"12".split("").map((_, i) => (
-                <img key={i} src={`https://images.unsplash.com/photo-1518063319808-1f516a2cc563?w=400&h=250&fit=crop&q=80&sig=${i}`} alt="Theatre" className="w-full h-auto object-cover grayscale" />
+               {siteAssets.performanceStills.slice(0, 2).map((img, i) => (
+                <img key={i} src={img} alt="Theatre" className="w-full h-auto object-cover grayscale" />
               ))}
             </div>
           </div>
@@ -115,8 +116,8 @@ export function Birdland() {
           <div>
             <h4 className="text-xl font-serif text-white mb-2">6. Puppets (work in progress)</h4>
             <div className="flex gap-8">
-              <div className="text-center"><p className="mb-2 text-[#aaa]">Begia</p><img src="https://images.unsplash.com/photo-1549490349-8643362247b5?w=200&h=200&fit=crop" alt="Begia" className="w-48 h-48 object-cover grayscale"/></div>
-              <div className="text-center"><p className="mb-2 text-[#aaa]">Samhain</p><img src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=200&h=200&fit=crop" alt="Samhain" className="w-48 h-48 object-cover grayscale"/></div>
+              <div className="text-center"><p className="mb-2 text-[#aaa]">Begia</p><img src={siteAssets.birdlandGrid[6]} alt="Begia" className="w-48 h-48 object-cover grayscale"/></div>
+              <div className="text-center"><p className="mb-2 text-[#aaa]">Samhain</p><img src={siteAssets.birdlandGrid[7]} alt="Samhain" className="w-48 h-48 object-cover grayscale"/></div>
             </div>
           </div>
 

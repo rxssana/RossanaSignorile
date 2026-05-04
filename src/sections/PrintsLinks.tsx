@@ -1,4 +1,5 @@
 import { SectionHeader } from "../components/SectionHeader";
+import { siteAssets } from "../lib/assets";
 
 export function PrintsLinks() {
   return (
@@ -13,8 +14,8 @@ export function PrintsLinks() {
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-           {"1234".split("").map((_, i) => (
-             <img key={i} src={`https://images.unsplash.com/photo-1544816155-12df9643f363?w=200&h=200&fit=crop&q=80&sig=${i}`} alt="Zine preview" className="w-full aspect-square object-cover grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all" />
+           {siteAssets.zine.map((img, i) => (
+             <img key={i} src={img} alt="Zine preview" className="w-full aspect-square object-cover grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all" />
            ))}
         </div>
         

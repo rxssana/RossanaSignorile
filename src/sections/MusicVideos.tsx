@@ -1,4 +1,5 @@
 import { SectionHeader } from "../components/SectionHeader";
+import { siteAssets } from "../lib/assets";
 
 export function MusicVideos() {
   return (
@@ -18,10 +19,10 @@ export function MusicVideos() {
             </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
-             {"123".split("").map((_, i) => (
+             {siteAssets.musicStills.slice(0, 3).map((img, i) => (
                 <img 
                   key={i}
-                  src={`https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=400&q=80&sig=${i}`}
+                  src={img}
                   alt="music video still"
                   className="w-full aspect-video object-cover grayscale opacity-90 hover:opacity-100 hover:grayscale-0 transition-all rounded-sm shadow-xl"
                 />
@@ -35,10 +36,10 @@ export function MusicVideos() {
             Band: Archaic Dirge<br/>shot on handycam
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-             {"123".split("").map((_, i) => (
+             {siteAssets.musicStills.slice(3, 6).map((img, i) => (
                 <img 
                   key={i}
-                  src={`https://images.unsplash.com/photo-1542314831-c5a4fb11cbf0?w=400&q=80&sig=${i}`}
+                  src={img}
                   alt="music video still"
                   className="w-full aspect-video object-cover mix-blend-luminosity hover:mix-blend-normal transition-all rounded-sm shadow-xl"
                 />
@@ -57,10 +58,10 @@ export function MusicVideos() {
             </p>
            </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-             {"123".split("").map((_, i) => (
+             {siteAssets.musicStills.slice(6, 9).map((img, i) => (
                 <img 
                   key={i}
-                  src={`https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&q=80&sig=${i}`}
+                  src={img}
                   alt="music video still"
                   className="w-full aspect-video object-cover grayscale opacity-80 hover:opacity-100 transition-all rounded-sm shadow-xl"
                 />
