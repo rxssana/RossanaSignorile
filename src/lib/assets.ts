@@ -25,6 +25,13 @@ export const siteAssets = {
     new URL("../../asset/_DSC0344.jpg", import.meta.url).href,
     new URL("../../asset/_DSC0348.jpg", import.meta.url).href,
   ],
+  shortBackgrounds: [
+    new URL("../../asset/0024-home.jpg", import.meta.url).href,
+    new URL("../../asset/_DSC0322.jpg", import.meta.url).href,
+    new URL("../../asset/_DSC0324.jpg", import.meta.url).href,
+    new URL("../../asset/_DSC0332.jpg", import.meta.url).href,
+    new URL("../../asset/_DSC0340.jpg", import.meta.url).href,
+  ],
   musicStills: [
     new URL("../../asset/_FHD7913.JPG", import.meta.url).href,
     new URL("../../asset/_FHD7916.JPG", import.meta.url).href,

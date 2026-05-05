@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 const links = [
+  { id: "home", label: "home" },
   { id: "shorts", label: "shorts" },
   { id: "music-videos", label: "music videos" },
   { id: "birdland", label: "birdland" },
