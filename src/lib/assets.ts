@@ -1,4 +1,5 @@
 export const siteAssets = {
+  homeBackground: new URL("../../asset/0024-home.jpg", import.meta.url).href,
   horrorPoster: new URL("../../asset/f7c142692b-poster.jpg", import.meta.url).href,
   witchesPoster: new URL("../../asset/Photo2254.jpg", import.meta.url).href,
   vaguePoster: new URL("../../asset/Photo2252.jpg", import.meta.url).href,
