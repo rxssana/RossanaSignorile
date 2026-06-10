@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .short-film-poster {
-  width: min(15rem, 72vw);
+  width: min(18rem, 80vw);
   margin-inline: auto;
 }
 
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .short-film-still {
-  height: clamp(9rem, 20cqi, 14rem);
+  height: clamp(12rem, 26cqi, 20rem);
 }
 
 @container (min-width: 42rem) {
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @container (min-width: 56rem) {
   .short-film-layout {
-    grid-template-columns: clamp(12rem, 25cqi, 17.5rem) minmax(0, 1fr);
+    grid-template-columns: clamp(14rem, 28cqi, 21rem) minmax(0, 1fr);
   }
 
   .short-film-poster {
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .short-film-still {
-    height: clamp(8rem, 18cqi, 12rem);
+    height: clamp(10rem, 22cqi, 17rem);
   }
 }
 

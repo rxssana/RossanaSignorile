@@ -139,20 +139,21 @@
           "src": "/asset/web/_DSC0348.jpg",
           "rotation": 0
         }
-      ]
-    },
-    {
-      "folder": "01_called_or_uncalled",
-      "title": "Teli sonori",
-      "description": "Some painted sheets used during the performance Innere Auge, in the Sincroniche Anomalie event. The performance was made by Andrea Donvito and his percussions and Rossana Signorile as the moving body. The black and blue one had contact mics attached to it so it made noise if touched, while the long one made noise simply when being shaken, due to the wood and objects attached to it.",
-      "images": [
+      ],
+      "subsections": [
         {
-          "src": "/asset/web/_DSC0322.jpg",
-          "rotation": 0
-        },
-        {
-          "src": "/asset/web/photo_5915655428732209032_y2.jpg",
-          "rotation": 0
+          "title": "Teli sonori",
+          "description": "Some painted sheets used during the performance Innere Auge, in the Sincroniche Anomalie event. The performance was made by Andrea Donvito and his percussions and Rossana Signorile as the moving body. The black and blue one had contact mics attached to it so it made noise if touched, while the long one made noise simply when being shaken, due to the wood and objects attached to it.",
+          "images": [
+            {
+              "src": "/asset/web/_DSC0322.jpg",
+              "rotation": 0
+            },
+            {
+              "src": "/asset/web/photo_5915655428732209032_y2.jpg",
+              "rotation": 0
+            }
+          ]
         }
       ]
     },

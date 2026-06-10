@@ -2,11 +2,18 @@ import { useState } from "react";
 import { EditableImageValue, mediaAsset, mediaKey, mediaPath, mediaStyle } from "../lib/assets";
 import { openLightbox } from "./Lightbox";
 
+interface BirdlandSubsection {
+  title: string;
+  description: string;
+  images: EditableImageValue[];
+}
+
 interface BirdlandWork {
   folder: string;
   title: string;
   description: string;
   images: EditableImageValue[];
+  subsections?: BirdlandSubsection[];
 }
 
 function FolderIcon() {
@@ -83,13 +90,8 @@ export function FolderIndex({ works }: { works: BirdlandWork[] }) {
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
               {current.images.map((file, i) => (
                 <button
-                  key={file}
-                  onClick={() =>
-                    openLightbox(
-                      current.images,
-                      i,
-                    )
-                  }
+                  key={mediaKey(file)}
+                  onClick={() => openLightbox(current.images, i)}
                   className="group text-left"
                 >
                   <img
@@ -105,6 +107,37 @@ export function FolderIndex({ works }: { works: BirdlandWork[] }) {
                 </button>
               ))}
             </div>
+
+            {current.subsections && current.subsections.map((sub) => (
+              <div key={sub.title} className="mt-10 border-t border-[#2a2a2a] pt-8">
+                <h5 className="font-serif text-lg text-[#ccc] md:text-xl">{sub.title}</h5>
+                {sub.description && (
+                  <p className="mt-2 max-w-3xl font-sans text-sm font-light leading-relaxed text-[#aaa]">
+                    {sub.description}
+                  </p>
+                )}
+                <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+                  {sub.images.map((file, i) => (
+                    <button
+                      key={mediaKey(file)}
+                      onClick={() => openLightbox(sub.images, i)}
+                      className="group text-left"
+                    >
+                      <img
+                        src={mediaAsset(file)}
+                        alt={`${sub.title} - ${mediaPath(file)}`}
+                        loading="lazy"
+                        className="aspect-square w-full cursor-zoom-in object-cover opacity-85 transition-opacity group-hover:opacity-100"
+                        style={mediaStyle(file)}
+                      />
+                      <p className="mt-1 truncate text-[0.625rem] leading-tight text-[#666] group-hover:text-[#999]">
+                        {mediaPath(file)}
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       )}
