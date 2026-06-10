@@ -68,7 +68,6 @@ export const siteAssets = {
   biffiEBaffi: {
     stills: [
       asset("_FHD2036.jpg"),
-      asset("Still 2026-04-25 213620_6.1.1.jpg"),
       asset("_FHD4875.jpg"),
       asset("_FHD2554.jpg"),
       asset("_FHD3321.jpg"),

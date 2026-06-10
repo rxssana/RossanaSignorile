@@ -94,15 +94,15 @@ export function Shorts() {
         {films.map((film, idx) => (
           <article
             key={film.title}
-            className={`mx-auto w-full max-w-5xl ${film.dark ? "bg-black/60" : "bg-black/30"} p-6 md:p-10`}
+            className={`mx-auto w-full max-w-6xl ${film.dark ? "bg-black/60" : "bg-black/30"} p-5 md:p-10`}
           >
-            <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-[220px_1fr]">
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[280px_1fr]">
               <img
                 src={film.poster ?? film.feature}
                 alt={`${film.title} ${film.poster ? "poster" : "still"}`}
                 loading={idx > 1 ? "lazy" : undefined}
                 onClick={() => openLightbox(film.poster ?? film.feature ?? "")}
-                className="mx-auto w-[200px] md:w-full cursor-zoom-in object-cover shadow-2xl"
+                className="mx-auto w-[240px] md:w-full cursor-zoom-in object-cover shadow-2xl"
               />
 
               <div className="text-center text-white">
@@ -124,7 +124,7 @@ export function Shorts() {
                 </div>
 
                 <div
-                  className={`mx-auto mt-8 grid max-w-3xl gap-3 ${
+                  className={`mt-8 grid gap-3 ${
                     film.stills.length === 2 ? "grid-cols-2" : "grid-cols-1 sm:grid-cols-3"
                   }`}
                 >
@@ -135,7 +135,7 @@ export function Shorts() {
                       alt={`${film.title} still ${index + 1}`}
                       loading="lazy"
                       onClick={() => openLightbox(film.stills, index)}
-                      className="h-40 w-full cursor-zoom-in object-cover"
+                      className="h-44 md:h-56 w-full cursor-zoom-in object-cover"
                     />
                   ))}
                 </div>
@@ -145,13 +145,13 @@ export function Shorts() {
         ))}
 
         {/* Biffi e Baffi */}
-        <article className="mx-auto w-full max-w-5xl bg-black/60 p-6 text-center text-white md:p-10">
+        <article className="mx-auto w-full max-w-6xl bg-black/60 p-5 text-center text-white md:p-10">
           <h3 className="font-display text-2xl md:text-3xl tracking-wide">BIFFI E BAFFI (2025-)</h3>
           <p className="mx-auto mt-5 max-w-3xl text-lg md:text-xl font-light leading-relaxed">
-            Short film in post-production, directed by Rossana Signorile with Antonella Massaro.
+            Short film in post-production, directed by Rossana Signorile and Antonella Massaro.
             Rossana curated the scenography with Asia Castagna and performed in it.
           </p>
-          <div className="mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-3 md:grid-cols-3">
+          <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3">
             {siteAssets.biffiEBaffi.stills.map((img, i) => (
               <img
                 key={img}
@@ -159,7 +159,7 @@ export function Shorts() {
                 alt={`Biffi e Baffi still ${i + 1}`}
                 loading="lazy"
                 onClick={() => openLightbox(siteAssets.biffiEBaffi.stills, i)}
-                className="h-40 w-full cursor-zoom-in object-cover"
+                className="h-44 md:h-56 w-full cursor-zoom-in object-cover"
               />
             ))}
           </div>

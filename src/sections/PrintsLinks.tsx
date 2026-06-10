@@ -24,6 +24,19 @@ export function PrintsLinks() {
         <p className="text-[#aaa] font-light mb-16 text-sm">A3 - 5€ &nbsp;·&nbsp; A4 - 7€ &nbsp;·&nbsp; A5 - 10€</p>
 
         <div className="flex flex-col gap-6 text-lg font-light">
+          <a
+            href="https://film-makerscoop.com/filmmakers/Rossana-Signorile"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-auto block w-full max-w-xl border border-[#333] bg-[#111] px-6 py-5 text-left transition-colors hover:border-[#666]"
+          >
+            <span className="block font-serif text-xl text-white">
+              Rossana Signorile — The Film-Makers' Cooperative
+            </span>
+            <span className="mt-1 block text-sm text-[#888]">
+              filmmakerscoop · filmography &amp; profile
+            </span>
+          </a>
           <a href="#" className="text-[#ccc] hover:text-white underline decoration-[#333] hover:decoration-white underline-offset-4 transition-colors">
             Asterion performance article. [link]
           </a>

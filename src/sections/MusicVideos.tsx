@@ -2,20 +2,47 @@ import { SectionHeader } from "../components/SectionHeader";
 import { siteAssets } from "../lib/assets";
 import { openLightbox } from "../components/Lightbox";
 
-function StillsRow({ images }: { images: string[] }) {
+/**
+ * ▼ EDIT HERE: paste the exact YouTube watch URLs when available.
+ * They currently point to the channels.
+ */
+const videos = [
+  {
+    label: "Band: Archaic Dirge",
+    sub: "shot on super8 film",
+    url: "https://www.youtube.com/@ArchaicDirge",
+    titleCard: siteAssets.forseUnGiorno.title,
+    titleAlt: "Archaic Dirge — Forse, un giorno",
+    stills: siteAssets.forseUnGiorno.stills,
+  },
+  {
+    label: "Band: Archaic Dirge",
+    sub: "shot on handycam",
+    url: "https://www.youtube.com/@ArchaicDirge",
+    titleCard: undefined as string | undefined,
+    titleAlt: "Archaic Dirge — handycam video",
+    stills: siteAssets.handycamVideo.stills,
+  },
+  {
+    label: "Band: Uncle Leaf",
+    sub: "shot on super8 film",
+    url: "https://www.youtube.com/@rxssanaa",
+    titleCard: siteAssets.magma.title,
+    titleAlt: "Uncle Leaf — Magma",
+    stills: siteAssets.magma.stills,
+  },
+];
+
+function WatchLink({ url }: { url: string }) {
   return (
-    <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-      {images.map((img, i) => (
-        <img
-          key={img}
-          src={img}
-          alt="music video still"
-          loading="lazy"
-          onClick={() => openLightbox(images, i)}
-          className="aspect-video w-full cursor-zoom-in object-cover opacity-90 shadow-xl transition-opacity hover:opacity-100"
-        />
-      ))}
-    </div>
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      className="mt-3 inline-flex items-center gap-2 border border-[#555] px-4 py-2 font-mono text-xs tracking-wider text-[#ccc] transition-colors hover:border-white hover:text-white"
+    >
+      <span aria-hidden="true">▶</span> WATCH ON YOUTUBE
+    </a>
   );
 }
 
@@ -35,52 +62,43 @@ export function MusicVideos() {
       <div className="relative">
         <SectionHeader title="Music videos" />
 
-        <div className="mx-auto mt-16 flex max-w-5xl flex-col gap-28 px-4">
-          {/* Forse, un giorno — Archaic Dirge, super8 */}
-          <div className="text-center">
-            <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-12">
-              <img
-                src={siteAssets.forseUnGiorno.title}
-                alt="Archaic Dirge — Forse, un giorno (title card)"
-                onClick={() => openLightbox(siteAssets.forseUnGiorno.title)}
-                className="w-full max-w-md cursor-zoom-in object-cover shadow-2xl"
-              />
-              <p className="text-sm font-light tracking-wide text-[#aaa] md:text-left">
-                Band: Archaic Dirge
-                <br />
-                shot on super8 film
-              </p>
-            </div>
-            <StillsRow images={siteAssets.forseUnGiorno.stills} />
-          </div>
+        <div className="mx-auto mt-16 flex max-w-6xl flex-col gap-28 px-4">
+          {videos.map((video) => (
+            <div key={video.titleAlt} className="text-center">
+              <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-12">
+                {video.titleCard && (
+                  <a href={video.url} target="_blank" rel="noreferrer" title="Watch on YouTube">
+                    <img
+                      src={video.titleCard}
+                      alt={`${video.titleAlt} (title card)`}
+                      className="w-full max-w-lg object-cover shadow-2xl transition-opacity hover:opacity-90"
+                    />
+                  </a>
+                )}
+                <div className="text-sm font-light tracking-wide text-[#aaa] md:text-left">
+                  <p>
+                    {video.label}
+                    <br />
+                    {video.sub}
+                  </p>
+                  <WatchLink url={video.url} />
+                </div>
+              </div>
 
-          {/* Archaic Dirge — handycam */}
-          <div className="text-center">
-            <p className="mb-2 text-sm font-light tracking-wide text-[#aaa]">
-              Band: Archaic Dirge
-              <br />
-              shot on handycam
-            </p>
-            <StillsRow images={siteAssets.handycamVideo.stills} />
-          </div>
-
-          {/* Magma — Uncle Leaf, super8 */}
-          <div className="text-center">
-            <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-12">
-              <img
-                src={siteAssets.magma.title}
-                alt="Uncle Leaf — Magma (title card)"
-                onClick={() => openLightbox(siteAssets.magma.title)}
-                className="w-full max-w-md cursor-zoom-in object-cover shadow-2xl"
-              />
-              <p className="text-sm font-light tracking-wide text-[#aaa] md:text-left">
-                Band: Uncle Leaf
-                <br />
-                shot on super8 film
-              </p>
+              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                {video.stills.map((img, i) => (
+                  <img
+                    key={img}
+                    src={img}
+                    alt={`${video.titleAlt} still`}
+                    loading="lazy"
+                    onClick={() => openLightbox(video.stills, i)}
+                    className="aspect-video w-full cursor-zoom-in object-cover opacity-90 shadow-xl transition-opacity hover:opacity-100"
+                  />
+                ))}
+              </div>
             </div>
-            <StillsRow images={siteAssets.magma.stills} />
-          </div>
+          ))}
         </div>
       </div>
     </section>
