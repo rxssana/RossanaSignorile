@@ -1,5 +1,4 @@
 import { Navigation } from "./Navigation";
-import { siteAssets } from "../lib/assets";
 import { useEffect, useState } from "react";
 
 export function Overlay() {
@@ -39,16 +38,9 @@ export function Overlay() {
         </div>
       )}
 
-      {/* Center Top Graphics (Star/Moon) - we'll just use css/svg to draw simple shapes or use lucide */}
-      {isHomeVisible && (
-        <div className="fixed top-12 left-1/2 -translate-x-1/2 z-40 pointer-events-none opacity-60 mix-blend-screen hidden lg:block">
-          <img src={siteAssets.titleMark} alt="abstract" className="w-24 h-24 object-cover rounded-full filter grayscale contrast-150 blur-[1px] " style={{ maskImage: 'radial-gradient(circle, black 30%, transparent 70%)', WebkitMaskImage: 'radial-gradient(circle, black 30%, transparent 70%)'}} />
-        </div>
-      )}
-
       {/* Bottom Right Links */}
       {isHomeVisible && (
-        <div className="fixed bottom-0 right-0 p-8 md:p-12 z-50 pointer-events-none text-right">
+        <div className="fixed bottom-0 right-0 p-8 md:p-12 z-50 pointer-events-none text-right hidden md:block">
           <div className="pointer-events-auto flex flex-col items-end gap-1 text-sm font-light text-canvas-muted hover:*:text-white *:transition-colors" style={{ textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>
              <a href="mailto:signorilerossana0@gmail.com">gmail: signorilerossana0@gmail.com</a>
              <a href="https://instagram.com/rxssana" target="_blank" rel="noreferrer">instagram @rxssana</a>

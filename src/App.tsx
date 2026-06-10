@@ -4,6 +4,7 @@
  */
 
 import { Overlay } from "./components/Overlay";
+import { Lightbox } from "./components/Lightbox";
 import { Home } from "./sections/Home";
 import { Shorts } from "./sections/Shorts";
 import { MusicVideos } from "./sections/MusicVideos";
@@ -16,9 +17,10 @@ export default function App() {
   return (
     <div className="relative w-full min-h-screen text-canvas-text font-serif selection:bg-white selection:text-black">
       <Overlay />
-      
+      <Lightbox />
+
       {/* Main Content Area */}
-      <main className="md:ml-64 relative z-10 bg-transparent">
+      <main className="pt-14 md:pt-0 md:ml-64 relative z-10 bg-transparent">
         <Home />
         <Shorts />
         <MusicVideos />

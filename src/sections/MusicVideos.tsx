@@ -1,74 +1,87 @@
 import { SectionHeader } from "../components/SectionHeader";
 import { siteAssets } from "../lib/assets";
+import { openLightbox } from "../components/Lightbox";
+
+function StillsRow({ images }: { images: string[] }) {
+  return (
+    <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      {images.map((img, i) => (
+        <img
+          key={img}
+          src={img}
+          alt="music video still"
+          loading="lazy"
+          onClick={() => openLightbox(images, i)}
+          className="aspect-video w-full cursor-zoom-in object-cover opacity-90 shadow-xl transition-opacity hover:opacity-100"
+        />
+      ))}
+    </div>
+  );
+}
 
 export function MusicVideos() {
   return (
-    <section id="music-videos" className="pt-24 pb-32">
-      <SectionHeader title="Music videos" />
+    <section
+      id="music-videos"
+      className="relative pt-24 pb-32"
+      style={{
+        backgroundImage: `url(${siteAssets.textureDark})`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <div className="absolute inset-0 bg-black/75" aria-hidden="true" />
 
-      <div className="flex flex-col gap-24 mt-24 max-w-5xl mx-auto px-4">
-        
-        {/* Video 1 */}
-        <div className="text-center">
-          <div className="relative inline-block mb-8">
-            <h3 className="text-3xl md:text-5xl font-display font-bold italic tracking-widest text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
-               Archaic Dirge<br/><span className="text-2xl md:text-4xl">Forse, un giorno</span>
-            </h3>
-            <p className="absolute -right-8 -bottom-8 md:right-12 text-sm text-[#aaa] font-sans tracking-wide text-right">
-              Band: Archaic Dirge<br/>shot on super8 film
+      <div className="relative">
+        <SectionHeader title="Music videos" />
+
+        <div className="mx-auto mt-16 flex max-w-5xl flex-col gap-28 px-4">
+          {/* Forse, un giorno — Archaic Dirge, super8 */}
+          <div className="text-center">
+            <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-12">
+              <img
+                src={siteAssets.forseUnGiorno.title}
+                alt="Archaic Dirge — Forse, un giorno (title card)"
+                onClick={() => openLightbox(siteAssets.forseUnGiorno.title)}
+                className="w-full max-w-md cursor-zoom-in object-cover shadow-2xl"
+              />
+              <p className="text-sm font-light tracking-wide text-[#aaa] md:text-left">
+                Band: Archaic Dirge
+                <br />
+                shot on super8 film
+              </p>
+            </div>
+            <StillsRow images={siteAssets.forseUnGiorno.stills} />
+          </div>
+
+          {/* Archaic Dirge — handycam */}
+          <div className="text-center">
+            <p className="mb-2 text-sm font-light tracking-wide text-[#aaa]">
+              Band: Archaic Dirge
+              <br />
+              shot on handycam
             </p>
+            <StillsRow images={siteAssets.handycamVideo.stills} />
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
-             {siteAssets.musicStills.slice(0, 3).map((img, i) => (
-                <img 
-                  key={i}
-                  src={img}
-                  alt="music video still"
-                  className="w-full aspect-video object-cover grayscale opacity-90 hover:opacity-100 hover:grayscale-0 transition-all rounded-sm shadow-xl"
-                />
-             ))}
+
+          {/* Magma — Uncle Leaf, super8 */}
+          <div className="text-center">
+            <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-12">
+              <img
+                src={siteAssets.magma.title}
+                alt="Uncle Leaf — Magma (title card)"
+                onClick={() => openLightbox(siteAssets.magma.title)}
+                className="w-full max-w-md cursor-zoom-in object-cover shadow-2xl"
+              />
+              <p className="text-sm font-light tracking-wide text-[#aaa] md:text-left">
+                Band: Uncle Leaf
+                <br />
+                shot on super8 film
+              </p>
+            </div>
+            <StillsRow images={siteAssets.magma.stills} />
           </div>
         </div>
-
-        {/* Video 2 */}
-        <div className="text-center mt-12">
-          <p className="text-sm text-[#aaa] font-sans tracking-wide mb-8">
-            Band: Archaic Dirge<br/>shot on handycam
-          </p>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-             {siteAssets.musicStills.slice(3, 6).map((img, i) => (
-                <img 
-                  key={i}
-                  src={img}
-                  alt="music video still"
-                  className="w-full aspect-video object-cover mix-blend-luminosity hover:mix-blend-normal transition-all rounded-sm shadow-xl"
-                />
-             ))}
-          </div>
-        </div>
-
-        {/* Video 3 */}
-        <div className="text-center mt-24">
-           <div className="relative flex justify-center mb-12">
-             <h3 className="text-5xl md:text-7xl font-display text-red-800 tracking-tighter opacity-80 mix-blend-screen" style={{ textShadow: "0 0 20px red" }}>
-                Magma
-             </h3>
-             <p className="absolute right-0 bottom-0 text-sm text-[#aaa] font-sans tracking-wide text-right" style={{transform: "translateY(100%)"}}>
-              Band: Uncle Leaf<br/>shot on super8 film
-            </p>
-           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-             {siteAssets.musicStills.slice(6, 9).map((img, i) => (
-                <img 
-                  key={i}
-                  src={img}
-                  alt="music video still"
-                  className="w-full aspect-video object-cover grayscale opacity-80 hover:opacity-100 transition-all rounded-sm shadow-xl"
-                />
-             ))}
-          </div>
-        </div>
-
       </div>
     </section>
   );
