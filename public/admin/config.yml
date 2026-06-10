@@ -1,9 +1,8 @@
-local_backend: true
-
 backend:
   name: github
   repo: rxssana/RossanaSignorile
   branch: main
+  base_url: https://decap-oauth.signorilerossana0.workers.dev
 
 media_folder: public/uploads
 public_folder: /uploads
