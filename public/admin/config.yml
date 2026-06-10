@@ -261,6 +261,17 @@ collections:
             fields:
               - { label: Folder slug, name: folder, widget: string }
               - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string, required: false }
+              - label: Extra text blocks
+                name: extraTexts
+                widget: list
+                required: false
+                field: { label: Text, name: text, widget: text }
+              - label: Credits
+                name: credits
+                widget: list
+                required: false
+                field: { label: Credit, name: credit, widget: string }
               - { label: Description, name: description, widget: text, required: false }
               - label: Images
                 name: images
