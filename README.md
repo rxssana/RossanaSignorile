@@ -20,6 +20,17 @@ The site content can be edited with Decap CMS.
 
 1. Start the local CMS proxy:
    `npm run cms`
+
+If you want to authenticate the local proxy with a GitHub Personal Access Token (PAT) instead of using a hosted auth provider, do the following:
+
+- Copy `.env.example` to `.env` and set `GITHUB_TOKEN` to a PAT with `repo` scope.
+- Run the authenticated proxy with:
+
+```bash
+npm run cms:auth
+```
+
+This will load `GITHUB_TOKEN` from `.env` and start the local Decap proxy. `.env` is included in `.gitignore` so the token won't be committed.
 2. In another terminal, start the site:
    `npm run dev:local`
 3. Open the editor:
@@ -55,4 +66,10 @@ Run a production build with:
 
 ## Deploy
 
-The repository includes a GitHub Actions workflow that deploys the site to GitHub Pages when changes are pushed to `main`.
+The repository keeps GitHub Pages as the backup deploy target.
+
+Firebase Hosting is also configured in the repo. If you want to deploy there, use the separate Firebase workflow or the Firebase CLI.
+
+Note: Firebase Hosting can stay on the free plan, but the Decap login Function needs Blaze if you want that endpoint to run on Firebase.
+
+GitHub Pages still deploys when changes are pushed to `main`.

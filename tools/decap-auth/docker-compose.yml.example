@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  decap-auth:
+    image: decap-auth:latest
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - decap-auth-data:/data
+    environment:
+      - BASIC_USER=admin
+      - BASIC_PASS=CHANGE_THIS
+    restart: unless-stopped
+
+volumes:
+  decap-auth-data:

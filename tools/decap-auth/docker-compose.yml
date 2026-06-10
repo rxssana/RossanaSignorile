@@ -1,0 +1,30 @@
+services:
+  decap-auth:
+    build:
+      context: .
+    container_name: decap-auth
+    environment:
+      PORT: "3001"
+      DATA_DIR: /data
+      REPO_ROOT: /repo
+      AUTO_START_DECAP: "true"
+      BASIC_USER: ${BASIC_USER:-admin}
+      BASIC_PASS: ${BASIC_PASS:-change-me-now}
+    volumes:
+      - decap-auth-data:/data
+      - ${REPO_ROOT:-/srv/RossanaSignorile}:/repo:rw
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: decap-auth-nginx
+    depends_on:
+      - decap-auth
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
+
+volumes:
+  decap-auth-data:
