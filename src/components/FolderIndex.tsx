@@ -91,7 +91,7 @@ export function FolderIndex({ works }: { works: BirdlandWork[] }) {
                     loading="lazy"
                     className="aspect-square w-full cursor-zoom-in object-cover opacity-85 transition-opacity group-hover:opacity-100"
                   />
-                  <p className="mt-1 truncate text-[10px] leading-tight text-[#666] group-hover:text-[#999]">
+                  <p className="mt-1 truncate text-[0.625rem] leading-tight text-[#666] group-hover:text-[#999]">
                     {file}
                   </p>
                 </button>

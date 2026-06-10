@@ -1,6 +1,7 @@
 import { SectionHeader } from "../components/SectionHeader";
 import { siteAssets } from "../lib/assets";
 import { openLightbox } from "../components/Lightbox";
+import type { CSSProperties } from "react";
 
 interface ShortFilm {
   title: string;
@@ -90,23 +91,23 @@ export function Shorts() {
 
       <SectionHeader title="Shorts" />
 
-      <div className="flex flex-col gap-24 px-4 py-16 md:py-24">
+      <div className="shorts-list flex flex-col px-4">
         {films.map((film, idx) => (
           <article
             key={film.title}
-            className={`mx-auto w-full max-w-6xl ${film.dark ? "bg-black/60" : "bg-black/30"} p-5 md:p-10`}
+            className={`content-shell project-card ${film.dark ? "bg-black/60" : "bg-black/30"}`}
           >
-            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[280px_1fr]">
+            <div className="short-film-layout">
               <img
                 src={film.poster ?? film.feature}
                 alt={`${film.title} ${film.poster ? "poster" : "still"}`}
                 loading={idx > 1 ? "lazy" : undefined}
                 onClick={() => openLightbox(film.poster ?? film.feature ?? "")}
-                className="mx-auto w-[240px] md:w-full cursor-zoom-in object-cover shadow-2xl"
+                className="short-film-poster cursor-zoom-in object-cover shadow-2xl"
               />
 
               <div className="text-center text-white">
-                <h3 className="font-display text-2xl md:text-3xl tracking-wide">
+                <h3 className="short-film-title font-display tracking-wide">
                   {film.title} ({film.year})
                 </h3>
                 {film.format && (
@@ -114,19 +115,20 @@ export function Shorts() {
                     {film.format}
                   </p>
                 )}
-                <p className="mx-auto mt-4 max-w-2xl text-lg md:text-xl font-light leading-relaxed">
+                <p className="short-film-description mx-auto mt-4 max-w-2xl font-light leading-relaxed">
                   {film.description}
                 </p>
-                <div className="mt-6 space-y-1 text-sm md:text-base font-light text-[#ccc]">
+                <div className="mt-6 space-y-1 text-sm font-light text-[#ccc] md:text-base">
                   {film.credits.map((credit) => (
                     <p key={credit}>{credit}</p>
                   ))}
                 </div>
 
                 <div
-                  className={`mt-8 grid gap-3 ${
-                    film.stills.length === 2 ? "grid-cols-2" : "grid-cols-1 sm:grid-cols-3"
-                  }`}
+                  className="short-film-stills mt-8"
+                  style={
+                    { "--still-cols": film.stills.length === 2 ? 2 : 3 } as CSSProperties
+                  }
                 >
                   {film.stills.map((still, index) => (
                     <img
@@ -135,7 +137,7 @@ export function Shorts() {
                       alt={`${film.title} still ${index + 1}`}
                       loading="lazy"
                       onClick={() => openLightbox(film.stills, index)}
-                      className="h-44 md:h-56 w-full cursor-zoom-in object-cover"
+                      className="short-film-still w-full cursor-zoom-in object-cover"
                     />
                   ))}
                 </div>
@@ -145,13 +147,16 @@ export function Shorts() {
         ))}
 
         {/* Biffi e Baffi */}
-        <article className="mx-auto w-full max-w-6xl bg-black/60 p-5 text-center text-white md:p-10">
-          <h3 className="font-display text-2xl md:text-3xl tracking-wide">BIFFI E BAFFI (2025-)</h3>
-          <p className="mx-auto mt-5 max-w-3xl text-lg md:text-xl font-light leading-relaxed">
+        <article className="content-shell project-card bg-black/60 text-center text-white">
+          <h3 className="short-film-title font-display tracking-wide">BIFFI E BAFFI (2025-)</h3>
+          <p className="short-film-description mx-auto mt-5 max-w-3xl font-light leading-relaxed">
             Short film in post-production, directed by Rossana Signorile and Antonella Massaro.
             Rossana curated the scenography with Asia Castagna and performed in it.
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3">
+          <div
+            className="short-film-stills mt-8"
+            style={{ "--still-cols": 3 } as CSSProperties}
+          >
             {siteAssets.biffiEBaffi.stills.map((img, i) => (
               <img
                 key={img}
@@ -159,7 +164,7 @@ export function Shorts() {
                 alt={`Biffi e Baffi still ${i + 1}`}
                 loading="lazy"
                 onClick={() => openLightbox(siteAssets.biffiEBaffi.stills, i)}
-                className="h-44 md:h-56 w-full cursor-zoom-in object-cover"
+                className="short-film-still w-full cursor-zoom-in object-cover"
               />
             ))}
           </div>

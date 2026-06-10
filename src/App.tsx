@@ -20,7 +20,7 @@ export default function App() {
       <Lightbox />
 
       {/* Main Content Area */}
-      <main className="pt-14 md:pt-0 md:ml-64 relative z-10 bg-transparent">
+      <main className="site-main relative z-10 bg-transparent pt-14 md:pt-0">
         <Home />
         <Shorts />
         <MusicVideos />

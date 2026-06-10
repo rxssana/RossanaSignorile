@@ -54,7 +54,7 @@ export function Navigation() {
         <li key={link.id}>
           <button
             onClick={() => scrollTo(link.id)}
-            className={`text-xl font-light transition-colors duration-500 border-b border-transparent hover:text-white ${
+            className={`nav-link border-b border-transparent font-light transition-colors duration-500 hover:text-white ${
               activeId === link.id ? "text-white border-white/30" : "text-canvas-muted"
             }`}
             style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
@@ -69,10 +69,10 @@ export function Navigation() {
   return (
     <>
       {/* Desktop sidebar */}
-      <nav className="fixed left-0 top-0 z-50 hidden h-screen w-64 flex-col justify-between px-12 py-12 md:flex pointer-events-none">
+      <nav className="desktop-sidebar pointer-events-none fixed left-0 top-0 z-50 hidden h-screen flex-col justify-between md:flex">
         <div className="pointer-events-auto">
           <h1
-            className="mb-16 font-display text-3xl tracking-wide"
+            className="brand-title mb-16 font-display tracking-wide"
             style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
           >
             Rossana Signorile
