@@ -1,37 +1,10 @@
 import { SectionHeader } from "../components/SectionHeader";
-import { siteAssets } from "../lib/assets";
+import siteContent from "../content/site.json";
+import musicVideosContent from "../content/music-videos.json";
+import { mediaAsset, mediaKey, mediaStyle, resolveMedia } from "../lib/assets";
 import { openLightbox } from "../components/Lightbox";
 
-/**
- * ▼ EDIT HERE: paste the exact YouTube watch URLs when available.
- * They currently point to the channels.
- */
-const videos = [
-  {
-    label: "Band: Archaic Dirge",
-    sub: "shot on super8 film",
-    url: "https://www.youtube.com/@ArchaicDirge",
-    titleCard: siteAssets.forseUnGiorno.title,
-    titleAlt: "Archaic Dirge — Forse, un giorno",
-    stills: siteAssets.forseUnGiorno.stills,
-  },
-  {
-    label: "Band: Archaic Dirge",
-    sub: "shot on handycam",
-    url: "https://www.youtube.com/@ArchaicDirge",
-    titleCard: undefined as string | undefined,
-    titleAlt: "Archaic Dirge — handycam video",
-    stills: siteAssets.handycamVideo.stills,
-  },
-  {
-    label: "Band: Uncle Leaf",
-    sub: "shot on super8 film",
-    url: "https://www.youtube.com/@rxssanaa",
-    titleCard: siteAssets.magma.title,
-    titleAlt: "Uncle Leaf — Magma",
-    stills: siteAssets.magma.stills,
-  },
-];
+const videos = musicVideosContent.videos;
 
 function WatchLink({ url }: { url: string }) {
   return (
@@ -52,7 +25,7 @@ export function MusicVideos() {
       id="music-videos"
       className="relative pt-24 pb-32"
       style={{
-        backgroundImage: `url(${siteAssets.textureDark})`,
+        backgroundImage: `url(${mediaAsset(siteContent.backgrounds.darkTexture)})`,
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
       }}
@@ -66,12 +39,13 @@ export function MusicVideos() {
           {videos.map((video) => (
             <div key={video.titleAlt} className="text-center">
               <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-12">
-                {video.titleCard && (
+                {resolveMedia(video.titleCard).src && (
                   <a href={video.url} target="_blank" rel="noreferrer" title="Watch on YouTube">
                     <img
-                      src={video.titleCard}
+                      src={mediaAsset(video.titleCard)}
                       alt={`${video.titleAlt} (title card)`}
                       className="w-full max-w-lg object-cover shadow-2xl transition-opacity hover:opacity-90"
+                      style={mediaStyle(video.titleCard)}
                     />
                   </a>
                 )}
@@ -88,12 +62,13 @@ export function MusicVideos() {
               <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {video.stills.map((img, i) => (
                   <img
-                    key={img}
-                    src={img}
+                    key={mediaKey(img)}
+                    src={mediaAsset(img)}
                     alt={`${video.titleAlt} still`}
                     loading="lazy"
                     onClick={() => openLightbox(video.stills, i)}
                     className="aspect-video w-full cursor-zoom-in object-cover opacity-90 shadow-xl transition-opacity hover:opacity-100"
+                    style={mediaStyle(img)}
                   />
                 ))}
               </div>

@@ -1,0 +1,71 @@
+{
+  "brandName": "Rossana Signorile",
+  "navigation": [
+    {
+      "id": "home",
+      "label": "home"
+    },
+    {
+      "id": "shorts",
+      "label": "shorts"
+    },
+    {
+      "id": "music-videos",
+      "label": "music videos"
+    },
+    {
+      "id": "birdland",
+      "label": "birdland"
+    },
+    {
+      "id": "performance",
+      "label": "performance"
+    },
+    {
+      "id": "about",
+      "label": "about"
+    },
+    {
+      "id": "prints-links",
+      "label": "prints/links"
+    }
+  ],
+  "contact": {
+    "email": "signorilerossana0@gmail.com",
+    "instagramLabel": "instagram @rxssana",
+    "instagramUrl": "https://instagram.com/rxssana",
+    "youtubeLabel": "youtube: @rxssanaa",
+    "youtubeUrl": "https://www.youtube.com/@rxssanaa"
+  },
+  "home": {
+    "starImage": {
+      "src": "/asset/web/IMG_20251013_2106422.png",
+      "rotation": 0
+    },
+    "moonImage": {
+      "src": "/asset/web/IMG_20251013_210642.png",
+      "rotation": 0
+    },
+    "angelImage": {
+      "src": "/asset/web/IMG_20251013_210657.png",
+      "rotation": 0
+    },
+    "overlayTitle": "Landscapes",
+    "overlayLines": [
+      "welcome",
+      "to the land of dreams",
+      "following",
+      "death's kingdom"
+    ]
+  },
+  "backgrounds": {
+    "darkTexture": {
+      "src": "/asset/web/photo_6014705891501870113_y.jpg",
+      "rotation": 0
+    },
+    "lightTexture": {
+      "src": "/asset/web/photo_6014705891501870112_y.jpg",
+      "rotation": 0
+    }
+  }
+}

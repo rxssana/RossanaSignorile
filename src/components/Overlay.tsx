@@ -1,5 +1,6 @@
 import { Navigation } from "./Navigation";
 import { useEffect, useState } from "react";
+import siteContent from "../content/site.json";
 
 export function Overlay() {
   const [isHomeVisible, setIsHomeVisible] = useState(true);
@@ -27,13 +28,23 @@ export function Overlay() {
       {isHomeVisible && (
         <div className="fixed top-0 right-0 p-12 z-40 hidden md:flex flex-col items-end pointer-events-none">
           <h2 className="text-3xl font-display tracking-widest text-[#dcdcdc] mb-4" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>
-            Landscapes
+            {siteContent.home.overlayTitle}
           </h2>
           <div className="text-right text-lg font-light leading-relaxed text-[#c0c0c0]" style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>
-            <p>welcome</p>
-            <p>to the land of dreams</p>
-            <p className="mt-4">following</p>
-            <p className="mt-2 text-xl italic font-serif">death's kingdom</p>
+            {siteContent.home.overlayLines.map((line, index) => (
+              <p
+                key={line}
+                className={
+                  index === siteContent.home.overlayLines.length - 1
+                    ? "mt-2 text-xl italic font-serif"
+                    : index === siteContent.home.overlayLines.length - 2
+                      ? "mt-4"
+                      : undefined
+                }
+              >
+                {line}
+              </p>
+            ))}
           </div>
         </div>
       )}
@@ -42,9 +53,9 @@ export function Overlay() {
       {isHomeVisible && (
         <div className="fixed bottom-0 right-0 p-8 md:p-12 z-50 pointer-events-none text-right hidden md:block">
           <div className="pointer-events-auto flex flex-col items-end gap-1 text-sm font-light text-canvas-muted hover:*:text-white *:transition-colors" style={{ textShadow: "0 2px 5px rgba(0,0,0,0.8)" }}>
-             <a href="mailto:signorilerossana0@gmail.com">gmail: signorilerossana0@gmail.com</a>
-             <a href="https://instagram.com/rxssana" target="_blank" rel="noreferrer">instagram @rxssana</a>
-             <a href="https://www.youtube.com/@rxssanaa" target="_blank" rel="noreferrer">youtube: @rxssanaa</a>
+             <a href={`mailto:${siteContent.contact.email}`}>gmail: {siteContent.contact.email}</a>
+             <a href={siteContent.contact.instagramUrl} target="_blank" rel="noreferrer">{siteContent.contact.instagramLabel}</a>
+             <a href={siteContent.contact.youtubeUrl} target="_blank" rel="noreferrer">{siteContent.contact.youtubeLabel}</a>
           </div>
         </div>
       )}

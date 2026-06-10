@@ -1,0 +1,56 @@
+{
+  "intro": "You can support her buying a copy of her new zine 'A nest in the red moon',\n10 euros + shipping, via paypal (italy shipping only)",
+  "zineImages": [
+    {
+      "src": "/asset/web/M2U00538.00_00_06_03.Immagine002.jpg",
+      "rotation": 0
+    },
+    {
+      "src": "/asset/web/M2U00538.00_01_04_03.Immagine009.jpg",
+      "rotation": 0
+    },
+    {
+      "src": "/asset/web/M2U00538.00_00_50_18.Immagine007.jpg",
+      "rotation": 0
+    }
+  ],
+  "printNote": "also any artwork from the Birdland can be printed.",
+  "prices": "A3 - 5€ · A4 - 7€ · A5 - 10€",
+  "links": [
+    {
+      "title": "Rossana Signorile - The Film-Makers' Cooperative",
+      "subtitle": "filmmakerscoop · filmography & profile",
+      "url": "https://film-makerscoop.com/filmmakers/Rossana-Signorile",
+      "featured": true,
+      "note": ""
+    },
+    {
+      "title": "Asterion performance article. [link]",
+      "subtitle": "",
+      "url": "#",
+      "featured": false,
+      "note": ""
+    },
+    {
+      "title": "https://www.youtube.com/@ArchaicDirge",
+      "subtitle": "",
+      "url": "https://www.youtube.com/@ArchaicDirge",
+      "featured": false,
+      "note": ""
+    },
+    {
+      "title": "https://www.youtube.com/@rxssanaa",
+      "subtitle": "",
+      "url": "https://www.youtube.com/@rxssanaa",
+      "featured": false,
+      "note": ""
+    },
+    {
+      "title": "https://www.youtube.com/watch?v=OC1s07q6yAE",
+      "subtitle": "",
+      "url": "https://www.youtube.com/watch?v=OC1s07q6yAE",
+      "featured": false,
+      "note": "[Grido videoclip, which includes her artwork]"
+    }
+  ]
+}

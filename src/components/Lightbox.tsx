@@ -1,13 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
+import { EditableImageValue, resolveMedia } from "../lib/assets";
 
-type LightboxState = { images: string[]; index: number } | null;
+type LightboxImage = { src: string; rotation: number };
+type LightboxState = { images: LightboxImage[]; index: number } | null;
 
-let openFn: ((images: string[], index: number) => void) | null = null;
+let openFn: ((images: LightboxImage[], index: number) => void) | null = null;
 
 /** Open the fullscreen image viewer. Can be called from any component. */
-export function openLightbox(images: string[] | string, index = 0) {
+export function openLightbox(images: EditableImageValue[] | EditableImageValue, index = 0) {
   const list = Array.isArray(images) ? images : [images];
-  openFn?.(list, index);
+  openFn?.(list.map(resolveMedia), index);
 }
 
 export function Lightbox() {
@@ -52,9 +54,14 @@ export function Lightbox() {
       onClick={close}
     >
       <img
-        src={state.images[state.index]}
+        src={state.images[state.index].src}
         alt=""
         className="max-h-[88vh] max-w-[92vw] object-contain shadow-2xl"
+        style={
+          state.images[state.index].rotation
+            ? { transform: `rotate(${state.images[state.index].rotation}deg)` }
+            : undefined
+        }
         onClick={(e) => e.stopPropagation()}
       />
 

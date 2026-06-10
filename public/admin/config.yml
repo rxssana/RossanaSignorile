@@ -1,0 +1,520 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: rxssana/RossanaSignorile
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: site_content
+    label: Site content
+    files:
+      - name: site
+        label: Site settings
+        file: src/content/site.json
+        format: json
+        fields:
+          - { label: Brand name, name: brandName, widget: string }
+          - label: Navigation
+            name: navigation
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Section ID, name: id, widget: string }
+              - { label: Label, name: label, widget: string }
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - { label: Email, name: email, widget: string }
+              - { label: Instagram label, name: instagramLabel, widget: string }
+              - { label: Instagram URL, name: instagramUrl, widget: string }
+              - { label: YouTube label, name: youtubeLabel, widget: string }
+              - { label: YouTube URL, name: youtubeUrl, widget: string }
+          - label: Home
+            name: home
+            widget: object
+            fields:
+              - label: Star image
+                name: starImage
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - label: Moon image
+                name: moonImage
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - label: Angel image
+                name: angelImage
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - { label: Overlay title, name: overlayTitle, widget: string }
+              - label: Overlay lines
+                name: overlayLines
+                widget: list
+                field: { label: Line, name: line, widget: string }
+          - label: Backgrounds
+            name: backgrounds
+            widget: object
+            fields:
+              - label: Dark texture
+                name: darkTexture
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - label: Light texture
+                name: lightTexture
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+
+      - name: shorts
+        label: Shorts
+        file: src/content/shorts.json
+        format: json
+        fields:
+          - label: Films
+            name: films
+            widget: list
+            summary: "{{fields.title}} ({{fields.year}})"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Year, name: year, widget: string }
+              - { label: Format, name: format, widget: string, required: false }
+              - { label: Description, name: description, widget: text }
+              - label: Credits
+                name: credits
+                widget: list
+                field: { label: Credit, name: credit, widget: string }
+              - label: Poster
+                name: poster
+                widget: object
+                required: false
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - label: Feature image
+                name: feature
+                widget: object
+                required: false
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - label: Stills
+                name: stills
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - { label: Dark card, name: dark, widget: boolean, required: false, default: false }
+          - label: Biffi e Baffi
+            name: biffiEBaffi
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Year, name: year, widget: string }
+              - { label: Description, name: description, widget: text }
+              - label: Stills
+                name: stills
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+
+      - name: music_videos
+        label: Music videos
+        file: src/content/music-videos.json
+        format: json
+        fields:
+          - label: Videos
+            name: videos
+            widget: list
+            summary: "{{fields.titleAlt}}"
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Subtitle, name: sub, widget: string }
+              - { label: YouTube URL, name: url, widget: string }
+              - label: Title card
+                name: titleCard
+                widget: object
+                required: false
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - { label: Alt title, name: titleAlt, widget: string }
+              - label: Stills
+                name: stills
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+
+      - name: birdland
+        label: Birdland
+        file: src/content/birdland.json
+        format: json
+        fields:
+          - { label: Intro text, name: intro, widget: text }
+          - { label: Browse hint, name: hint, widget: string }
+          - label: Works
+            name: works
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Folder slug, name: folder, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text, required: false }
+              - label: Images
+                name: images
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+
+      - name: performance
+        label: Performance
+        file: src/content/performance.json
+        format: json
+        fields:
+          - label: The Ballad of Damnati
+            name: ballad
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: Description paragraphs
+                name: description
+                widget: list
+                field: { label: Paragraph, name: paragraph, widget: text }
+              - label: Credits
+                name: credits
+                widget: list
+                field: { label: Credit, name: credit, widget: string }
+              - label: Poster
+                name: poster
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - { label: Masks text, name: masksText, widget: text }
+              - label: Masks image
+                name: masksImage
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - label: Stills
+                name: stills
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+          - label: Indagine sulla fiducia
+            name: indagine
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: Lines
+                name: lines
+                widget: list
+                field: { label: Line, name: line, widget: string }
+              - label: Italic lines
+                name: italicLines
+                widget: list
+                field: { label: Line, name: line, widget: string }
+              - label: Images
+                name: images
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+          - label: Butoh
+            name: butoh
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Intro, name: intro, widget: text }
+              - label: Images
+                name: images
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - { label: Innere Auge text, name: innereAugeText, widget: text }
+              - label: Innere Auge images
+                name: innereAugeImages
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+              - { label: Asterion text, name: asterionText, widget: text }
+              - label: Asterion images
+                name: asterionImages
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - label: Rotation
+                    name: rotation
+                    widget: select
+                    default: 0
+                    options:
+                      - { label: "0°", value: 0 }
+                      - { label: "90°", value: 90 }
+                      - { label: "180°", value: 180 }
+                      - { label: "270°", value: 270 }
+
+      - name: about
+        label: About
+        file: src/content/about.json
+        format: json
+        fields:
+          - label: Portrait
+            name: portrait
+            widget: object
+            fields:
+              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - label: Rotation
+                name: rotation
+                widget: select
+                default: 0
+                options:
+                  - { label: "0°", value: 0 }
+                  - { label: "90°", value: 90 }
+                  - { label: "180°", value: 180 }
+                  - { label: "270°", value: 270 }
+          - label: Working image
+            name: working
+            widget: object
+            fields:
+              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - label: Rotation
+                name: rotation
+                widget: select
+                default: 0
+                options:
+                  - { label: "0°", value: 0 }
+                  - { label: "90°", value: 90 }
+                  - { label: "180°", value: 180 }
+                  - { label: "270°", value: 270 }
+          - label: Italian paragraphs
+            name: italianParagraphs
+            widget: list
+            field: { label: Paragraph, name: paragraph, widget: text }
+          - label: English paragraphs
+            name: englishParagraphs
+            widget: list
+            field: { label: Paragraph, name: paragraph, widget: text }
+          - label: Flower image
+            name: flower
+            widget: object
+            fields:
+              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - label: Rotation
+                name: rotation
+                widget: select
+                default: 0
+                options:
+                  - { label: "0°", value: 0 }
+                  - { label: "90°", value: 90 }
+                  - { label: "180°", value: 180 }
+                  - { label: "270°", value: 270 }
+          - label: Dark flower image
+            name: darkFlower
+            widget: object
+            fields:
+              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - label: Rotation
+                name: rotation
+                widget: select
+                default: 0
+                options:
+                  - { label: "0°", value: 0 }
+                  - { label: "90°", value: 90 }
+                  - { label: "180°", value: 180 }
+                  - { label: "270°", value: 270 }
+
+      - name: prints_links
+        label: Prints / Links
+        file: src/content/prints-links.json
+        format: json
+        fields:
+          - { label: Intro, name: intro, widget: text }
+          - label: Zine images
+            name: zineImages
+            widget: list
+            fields:
+              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - label: Rotation
+                name: rotation
+                widget: select
+                default: 0
+                options:
+                  - { label: "0°", value: 0 }
+                  - { label: "90°", value: 90 }
+                  - { label: "180°", value: 180 }
+                  - { label: "270°", value: 270 }
+          - { label: Print note, name: printNote, widget: string }
+          - { label: Prices, name: prices, widget: string }
+          - label: Links
+            name: links
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string, required: false }
+              - { label: URL, name: url, widget: string }
+              - { label: Featured card, name: featured, widget: boolean, default: false }
+              - { label: Note, name: note, widget: string, required: false }

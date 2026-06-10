@@ -1,0 +1,76 @@
+{
+  "videos": [
+    {
+      "label": "Band: Archaic Dirge",
+      "sub": "shot on super8 film",
+      "url": "https://www.youtube.com/@ArchaicDirge",
+      "titleCard": {
+        "src": "/asset/web/Screenshot 2026-04-22 233006.png",
+        "rotation": 0
+      },
+      "titleAlt": "Archaic Dirge - Forse, un giorno",
+      "stills": [
+        {
+          "src": "/asset/web/Still 2025-12-10 202043_1.1.16.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2025-12-10 202043_1.2.3.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2025-12-10 202043_1.1.13.jpg",
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "label": "Band: Archaic Dirge",
+      "sub": "shot on handycam",
+      "url": "https://www.youtube.com/@ArchaicDirge",
+      "titleCard": {
+        "src": "",
+        "rotation": 0
+      },
+      "titleAlt": "Archaic Dirge - handycam video",
+      "stills": [
+        {
+          "src": "/asset/web/M2U00482.00_24_10_20.Immagine035.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/M2U00482.00_32_40_00.Immagine047.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/M2U00482.00_27_56_02.Immagine040.jpg",
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "label": "Band: Uncle Leaf",
+      "sub": "shot on super8 film",
+      "url": "https://www.youtube.com/@rxssanaa",
+      "titleCard": {
+        "src": "/asset/web/Screenshot 2026-04-22 233415.png",
+        "rotation": 0
+      },
+      "titleAlt": "Uncle Leaf - Magma",
+      "stills": [
+        {
+          "src": "/asset/web/Still 2026-04-08 002351_2.79.3.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2026-04-08 002351_2.139.2.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2026-04-08 002351_2.149.4.jpg",
+          "rotation": 0
+        }
+      ]
+    }
+  ]
+}

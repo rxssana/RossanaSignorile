@@ -1,0 +1,111 @@
+{
+  "ballad": {
+    "title": "The Ballad of Damnati",
+    "description": [
+      "A theatrical piece that was represented on stage on April 2024, at the Teatro della Visitazione in Rome, winning the Umbilicus Contest organized by Lauro Versari. It is the story of a dysfunctional family and the process of transformation of the only character that is aware of the things that make the chain rot. They all behave like puppets but at the end every attempt of liberation leads to death, metaphysical death."
+    ],
+    "credits": [
+      "Written and directed by Rossana Signorile",
+      "Performed by Caterina Cingolani, Antonella Massario, Valeria Romano, Gabriele Passaro, Angelica Castagna, Rossana Signorile.",
+      "Scenography by Sabrina Scamarcio",
+      "Live Sound by Archaic Dirge",
+      "Light Design by Simone Marchetti",
+      "Make up by Asia Castagna",
+      "Sound Design by Silvia Di Furia"
+    ],
+    "poster": {
+      "src": "/asset/web/photo_5886220544678937890_y.jpg",
+      "rotation": 0
+    },
+    "masksText": "The new masks were designed by Asia Castagna but only used for the promotional campaign.",
+    "masksImage": {
+      "src": "/asset/web/_FHD6251.JPG",
+      "rotation": 0
+    },
+    "stills": [
+      {
+        "src": "/asset/web/2 (1) (2).jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/DSCF0908.JPG",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/photo_5855028026864160295_y.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/Sequenza 01.00_11_16_08.Immagine006 (1).jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/photo_5855028026864160297_y.jpg",
+        "rotation": 0
+      }
+    ]
+  },
+  "indagine": {
+    "title": "Indagine sulla fiducia",
+    "lines": [
+      "Performance in Gioia del Colle, in 2024.",
+      "Performed by Caterina Cingolani, Rossana Signorile.",
+      "Video shot by Antonella Massaro.",
+      "Live music by Archaic Dirge."
+    ],
+    "italicLines": [
+      "An echo, a dance, shadows moving through the meaning of trust.",
+      "Cosa significa la fiducia? Partendo da un passaggio di R. M. Rilke, ci siam messi a nudo."
+    ],
+    "images": [
+      {
+        "src": "/asset/web/C0001.00_15_12_22.Immagine010.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/918d36c7-a349-412d-b14a-9a9d84bcf91f.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/6fcd199e-2e57-4279-9574-c562570b98c6.jpg",
+        "rotation": 0
+      }
+    ]
+  },
+  "butoh": {
+    "title": "Butoh performance",
+    "intro": "Performances that took place during Ezio Tangini's butoh workshop in Viareggio.",
+    "images": [
+      {
+        "src": "/asset/web/Photo2252.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/Photo2254.jpg",
+        "rotation": 0
+      }
+    ],
+    "innereAugeText": "Pictures of the performance Inneres Auge, created with the percussion artist Andrea Donvito, in an improvisation practice that started with the breathing and the reaching of an inner eye.",
+    "innereAugeImages": [
+      {
+        "src": "/asset/web/_FHD7700.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/DSC08968.jpg",
+        "rotation": 0
+      }
+    ],
+    "asterionText": "Pictures of the performance Asterion, the result of the intensive workshop in Berlin at theaterforum kreuzberg e.V., held by Valentin Tszin.\nRossana's improvisation solo was a breathing harmonica, that followed her movements. A sound inside out.",
+    "asterionImages": [
+      {
+        "src": "/asset/web/photo_5427319322218009430_y.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/DSC08966.jpg",
+        "rotation": 0
+      }
+    ]
+  }
+}

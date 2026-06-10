@@ -1,6 +1,13 @@
 import { useState } from "react";
-import { BirdlandWork, birdlandAsset } from "../lib/assets";
+import { EditableImageValue, mediaAsset, mediaKey, mediaPath, mediaStyle } from "../lib/assets";
 import { openLightbox } from "./Lightbox";
+
+interface BirdlandWork {
+  folder: string;
+  title: string;
+  description: string;
+  images: EditableImageValue[];
+}
 
 function FolderIcon() {
   return (
@@ -79,20 +86,21 @@ export function FolderIndex({ works }: { works: BirdlandWork[] }) {
                   key={file}
                   onClick={() =>
                     openLightbox(
-                      current.images.map((f) => birdlandAsset(f)),
+                      current.images,
                       i,
                     )
                   }
                   className="group text-left"
                 >
                   <img
-                    src={birdlandAsset(file)}
-                    alt={`${current.title} — ${file}`}
+                    src={mediaAsset(file)}
+                    alt={`${current.title} - ${mediaPath(file)}`}
                     loading="lazy"
                     className="aspect-square w-full cursor-zoom-in object-cover opacity-85 transition-opacity group-hover:opacity-100"
+                    style={mediaStyle(file)}
                   />
                   <p className="mt-1 truncate text-[0.625rem] leading-tight text-[#666] group-hover:text-[#999]">
-                    {file}
+                    {mediaPath(file)}
                   </p>
                 </button>
               ))}

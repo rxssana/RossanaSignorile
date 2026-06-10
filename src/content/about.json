@@ -1,0 +1,30 @@
+{
+  "portrait": {
+    "src": "/asset/web/Still 2026-03-17 220424_1.30.1.jpg",
+    "rotation": 0
+  },
+  "working": {
+    "src": "/asset/web/Roll1_00000030.JPG",
+    "rotation": 0
+  },
+  "italianParagraphs": [
+    "Rossana Signorile è un'artista multidisciplinare nata nel sud Italia, nel 2001.\nAttualmente vive a Roma, ma si sposta con spirito nomade per perseguire i suoi obiettivi, supportata dalle persone nel mondo che credono nel potere dell'arte.",
+    "E' autodidatta. Dopo gli studi linguistici nell'Università di Bari, ha deciso di dare un'opportunità alla creazione a tempo pieno. A Roma, ha iniziato come tecnico in macchina da presa, nell'industria cinematografica e al tempo stesso ha diretto i suoi cortometraggi. E' interessata all'impermanenza della pellicola cinematografica e alle incertezze che girare in pellicola porta con sé, di cui ha fatto esperienza.",
+    "Ha diretto anche un'opera teatrale e studiato teatro danza con Ivan Ristallo, per poi dedicarsi alla danza butoh, studiando con Ezio Tangini e poi Valentin Tszin. Ha inoltre fatto parte della Biennale di Venezia College Teatro, in cui ha potuto seguire un workshop intensivo con Princess Hisatu Hassan Bangura, nel 2025. Folklore, miti, tradizioni popolari, riutilizzo di materiali. Porta avanti anche un interesse per la sperimentazione sonora, che al momento ha luogo con Andrea Donvito.",
+    "La vita vien vissuta come un processo alchemico, tutto è in continuo mutamento e distruzione, per lasciar spazio a qualcosa di nuovo, qualcosa che permette una conoscenza più intima delle proprie ombre interiori."
+  ],
+  "englishParagraphs": [
+    "ENGLISH - Rossana Signorile is a multidisciplinary artist born in the south of Italy in 2001.\nShe currently lives in Rome but moves across space to persecute her objectives, supported by people around the globe that trust the meaning of art.",
+    "She is self-taught. After a study on linguistics in University, she decided she would give a chance to making art full time. In Rome, she firstly started as a camera technician in the movie business and at the same time directing her own short movies. Interested in the process of film stocks and the impermanence of images, everything that could go wrong while filming on super8, she has discovered through the years.",
+    "She has also directed a theatrical play, and started studying dance theater with Ivan Ristallo and then dedicating her energies to butoh dance with Ezio Tangini and Valentin Tszin. She also was parte of La Biennale of Venice College Theater, in which she could take the intensive workshop with Princess Hisatu Hassan Bangura, in 2025. Folklore, myth, popular traditions and repurposed materials. She is also interested in sound experimentation, which she is currently developing with Andrea Donvito.",
+    "Life as an alchemical process, everything is in perpetual destruction to give space to something new, something that allows a better understanding of one's own inner shadows."
+  ],
+  "flower": {
+    "src": "/asset/web/IMG_20251028_144429.jpg",
+    "rotation": 0
+  },
+  "darkFlower": {
+    "src": "/asset/web/Photo2279.jpg",
+    "rotation": 0
+  }
+}

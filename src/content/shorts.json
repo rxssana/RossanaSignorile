@@ -1,0 +1,195 @@
+{
+  "films": [
+    {
+      "title": "HORROR VACUI",
+      "year": "2023",
+      "format": "Stop motion, 3'",
+      "description": "The story of a girl forced to grow up as she faces death in its forms.",
+      "credits": [
+        "Shot by Rossana Signorile",
+        "Music by Andrea Donvito"
+      ],
+      "poster": {
+        "src": "/asset/web/f7c142692b-poster.jpg",
+        "rotation": 0
+      },
+      "feature": {
+        "src": "",
+        "rotation": 0
+      },
+      "stills": [
+        {
+          "src": "/asset/web/Screenshot 2026-04-24 222938.png",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Screenshot 2026-04-24 222952.png",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Screenshot 2026-04-24 223016.png",
+          "rotation": 0
+        }
+      ],
+      "dark": false
+    },
+    {
+      "title": "WITCHES' DREAM",
+      "year": "2024",
+      "format": "Super8, 1'",
+      "description": "Experimental dialogue between camera and sound, what is still in the dream world.",
+      "credits": [
+        "Shot by Rossana Signorile",
+        "with Caterina Cingolani"
+      ],
+      "poster": {
+        "src": "",
+        "rotation": 0
+      },
+      "feature": {
+        "src": "/asset/web/WhatsApp Image 2025-05-09 at 19.46.21 2.jpg",
+        "rotation": 0
+      },
+      "stills": [
+        {
+          "src": "/asset/web/WhatsApp Image 2025-05-09 at 19.46.20 (3).jpeg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/WhatsApp Image 2025-05-09 at 19.46.22.jpeg",
+          "rotation": 0
+        }
+      ],
+      "dark": true
+    },
+    {
+      "title": "UNE VAGUE",
+      "year": "2025",
+      "format": "Handycam, 8'",
+      "description": "A short film about the concept of absence, translated through the body.",
+      "credits": [
+        "Shot by Rossana Signorile",
+        "Choreographed and performed by Vita Stasolla",
+        "Music by Andrea Donvito"
+      ],
+      "poster": {
+        "src": "/asset/web/locandina idea.jpg",
+        "rotation": 0
+      },
+      "feature": {
+        "src": "",
+        "rotation": 0
+      },
+      "stills": [
+        {
+          "src": "/asset/web/Sequenza 01.00_37_41_21.Immagine033.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Sequenza 01.00_19_38_04.Immagine042.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Sequenza 01.00_27_57_07.Immagine028.jpg",
+          "rotation": 0
+        }
+      ],
+      "dark": true
+    },
+    {
+      "title": "MNEMOSINE",
+      "year": "2026",
+      "format": "Super8 and Handycam, 8'",
+      "description": "Two characters embody the mythological story of Mnemosine and Lete, in a reflection about time and space.",
+      "credits": [
+        "Written and shot by Rossana Signorile",
+        "with Bianca Macerini, Monia Cappello",
+        "Music by Archaic Dirge"
+      ],
+      "poster": {
+        "src": "/asset/web/poster2.jpg",
+        "rotation": 0
+      },
+      "feature": {
+        "src": "",
+        "rotation": 0
+      },
+      "stills": [
+        {
+          "src": "/asset/web/Still 2025-11-29 200443_1.12.1.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2025-11-29 200443_1.43.1.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2025-11-29 200443_1.17.1.jpg",
+          "rotation": 0
+        }
+      ],
+      "dark": false
+    },
+    {
+      "title": "ANGELO STERMINATORE",
+      "year": "2026",
+      "format": "Super8, 6'",
+      "description": "An old chant emerging from light and shadow.",
+      "credits": [
+        "Shot by Rossana Signorile",
+        "with Aurora Bini",
+        "Music by Andrea Donvito"
+      ],
+      "poster": {
+        "src": "/asset/web/locandina angelo sterminatore.jpg",
+        "rotation": 0
+      },
+      "feature": {
+        "src": "",
+        "rotation": 0
+      },
+      "stills": [
+        {
+          "src": "/asset/web/Still 2026-04-08 002351_2.131.6.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2026-04-08 002351_2.118.2.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2026-04-08 002351_2.145.3.jpg",
+          "rotation": 0
+        }
+      ],
+      "dark": false
+    }
+  ],
+  "biffiEBaffi": {
+    "title": "BIFFI E BAFFI",
+    "year": "2025-",
+    "description": "Short film in post-production, directed by Rossana Signorile and Antonella Massaro. Rossana curated the scenography with Asia Castagna and performed in it.",
+    "stills": [
+      {
+        "src": "/asset/web/_FHD2036.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/_FHD4875.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/_FHD2554.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/_FHD3321.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/_FHD4688.jpg",
+        "rotation": 0
+      }
+    ]
+  }
+}
