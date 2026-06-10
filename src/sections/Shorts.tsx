@@ -48,9 +48,9 @@ export function Shorts() {
             key={film.title}
             className={`content-shell project-card ${film.dark ? "bg-black/60" : "bg-black/30"}`}
           >
-            <div className="short-film-layout">
+            <div className={`short-film-layout${(resolveMedia(film.poster).src || resolveMedia(film.feature).src) ? " has-poster" : ""}`}>
               {(() => {
-                const mainImage = film.poster || film.feature;
+                const mainImage = resolveMedia(film.poster).src ? film.poster : film.feature;
                 const resolved = resolveMedia(mainImage);
 
                 return resolved.src ? (

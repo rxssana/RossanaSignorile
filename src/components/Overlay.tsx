@@ -49,6 +49,21 @@ export function Overlay() {
         </div>
       )}
 
+      {/* Arrow — desktop, bottom center, PDF style */}
+      {isHomeVisible && (
+        <a
+          href="#shorts"
+          aria-label="Scroll down"
+          className="fixed bottom-10 left-1/2 z-50 hidden -translate-x-1/2 text-[#999] transition-colors hover:text-white md:block"
+          style={{ marginLeft: "clamp(5.75rem, 6.5vw, 8rem)" }}
+        >
+          <svg viewBox="0 0 16 48" className="h-12 w-5" fill="none" stroke="currentColor" strokeWidth="1.2">
+            <line x1="8" y1="0" x2="8" y2="40" />
+            <polyline points="2,32 8,42 14,32" />
+          </svg>
+        </a>
+      )}
+
       {/* Bottom Right Links */}
       {isHomeVisible && (
         <div className="fixed bottom-0 right-0 p-8 md:p-12 z-50 pointer-events-none text-right hidden md:block">

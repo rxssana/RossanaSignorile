@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @container (min-width: 56rem) {
-  .short-film-layout {
+  .short-film-layout.has-poster {
     grid-template-columns: clamp(14rem, 28cqi, 21rem) minmax(0, 1fr);
   }
 
