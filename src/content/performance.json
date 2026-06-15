@@ -78,11 +78,11 @@
     "images": [
       {
         "src": "/asset/web/Photo2252.jpg",
-        "rotation": 0
+        "rotation": 90
       },
       {
         "src": "/asset/web/Photo2254.jpg",
-        "rotation": 0
+        "rotation": 90
       }
     ],
     "innereAugeText": "Pictures of the performance Inneres Auge, created with the percussion artist Andrea Donvito, in an improvisation practice that started with the breathing and the reaching of an inner eye.",
