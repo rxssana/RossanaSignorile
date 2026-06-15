@@ -256,6 +256,7 @@
     {
       "folder": "04_birdthatcannotsing",
       "title": "4. Birdthatcannotsing",
+      "subtitle": "",
       "description": "A bird that cannot sing becomes a hummingbird, with its wings so light, barely noticeable, but a beauty so loud and a beak so long that it sings with its presence. Illustrations and other creations. Materials: acrylics, oil pastels, charcoal.",
       "images": [
         {
@@ -347,22 +348,23 @@
     {
       "folder": "05_theatre_of_the_starving_angel",
       "title": "5. Theatre of the starving angel",
+      "subtitle": "",
       "description": "A theater made of wood, which contains some creatures made of mud, wood pieces, and other magical objects. The walls are changeable and there's a long stair coming out of the theatre. The theatre folds like a box, to be carried everywhere.",
       "images": [
         {
-          "src": "/asset/web/_DSC0360.jpg",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_FHD7967.JPG",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_FHD7982.JPG",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_FHD7983.JPG",
+          "src": "",
           "rotation": 0
         }
       ]
