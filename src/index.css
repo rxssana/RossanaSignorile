@@ -177,3 +177,12 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: #666;
 }
+
+/* Render the site larger by default on desktop — reproduces a ~125% browser zoom
+   so the layout looks the way it does at 125% even at the browser's default 100%.
+   Scoped to the desktop layout (>=48rem) so the mobile layout is unaffected. */
+@media (min-width: 48rem) {
+  :root {
+    zoom: 1.25;
+  }
+}
