@@ -213,6 +213,7 @@
     {
       "folder": "03_birdland_magic_box",
       "title": "3. Birdland Magic Box",
+      "subtitle": "",
       "description": "A sort of noise box made of copper paper. It contains objects inside and a string made with my hair, it makes noise when connected to a mic.",
       "images": [
         {
@@ -372,6 +373,7 @@
     {
       "folder": "06_puppets_wip",
       "title": "6. Puppets (work in progress)",
+      "subtitle": "",
       "description": "Begia and Samhain.",
       "images": [
         {
@@ -387,18 +389,19 @@
     {
       "folder": "07_appeso_attesa_wip",
       "title": "7. Appeso, attesa (work in progress)",
+      "subtitle": "",
       "description": "",
       "images": [
         {
-          "src": "/asset/web/_FHD7825.JPG",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_FHD7908.JPG",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_FHD7612.JPG",
+          "src": "",
           "rotation": 0
         }
       ]
@@ -406,14 +409,15 @@
     {
       "folder": "08_cipa_nonpa_cipi",
       "title": "8. Cipa, nonpa, cipi, nonpa, cipi — non partecipi alla danza?",
+      "subtitle": "",
       "description": "",
       "images": [
         {
-          "src": "/asset/web/_FHD7984.JPG",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_FHD7988.JPG",
+          "src": "",
           "rotation": 0
         }
       ]
@@ -421,22 +425,23 @@
     {
       "folder": "09_uno_studio_sull_impermanenza",
       "title": "9. Uno studio sull' Impermanenza",
+      "subtitle": "",
       "description": "",
       "images": [
         {
-          "src": "/asset/web/_DSC0346.jpg",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_DSC0350.jpg",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/photo_6014705891501870112_y.jpg",
+          "src": "",
           "rotation": 0
         },
         {
-          "src": "/asset/web/photo_6014705891501870113_y.jpg",
+          "src": "",
           "rotation": 0
         }
       ]
