@@ -5,6 +5,7 @@
     {
       "folder": "01_called_or_uncalled",
       "title": "1. Called or uncalled, the divine will be present.",
+      "subtitle": "",
       "description": "Il vento ha operato in segretezza, con le ali frantumate, dove nulla chiude gli occhi al buio. Il tessuto si lascia modellare, assorbe le memorie, un canto antico che ha un'attenzione diversa, interna. Un'attenzione capace di trasformare, poi, la materia. Il processo alchemico della trasmutazione della materia è lo specchio della trasformazione interna. I materiali ruvidi vivono delle loro ombre, la cartapesta assume le sembianze di una massa viva informe, che contiene i germi divini di vita. — Project inside the exhibit Sincroniche Anomalie, with Aurora Bini and band Gat Osken, February 2026, at Arci Magma, Rome. Materials: papier maché, bed sheets, black wax, acrylics, charcoal, oil pastels, oil chalks.",
       "images": [
         {
@@ -20,16 +21,16 @@
           "rotation": 0
         },
         {
-          "src": "/asset/web/0006_6A.jpg",
+          "src": "/uploads/0006_6A.jpg",
           "rotation": 0
         },
         {
           "src": "/asset/web/0007_7A.jpg",
-          "rotation": 0
+          "rotation": 90
         },
         {
           "src": "/asset/web/0008_8A.jpg",
-          "rotation": 0
+          "rotation": 90
         },
         {
           "src": "/asset/web/0009_9A.jpg",
@@ -160,6 +161,7 @@
     {
       "folder": "02_every_bird_dies_by_its_own_song",
       "title": "2. Every bird dies by its own song",
+      "subtitle": "",
       "description": "Exhibited in Oblò121, in Rome, in April. 'In the woods there is a bird; his song stops you and makes you blush.' [Rimbaud] Birds experience the sounds of the universe without interrupting it with matter. They die with their birdsongs. Humans live by metaphors, they have to imitate and create something from outside of them. They are always aware of the becoming of things, they are aware of death. The concept was creating a space with two different angles: the angle of silence, where bells were made of wax and therefore could not ring, and the angle of human noise, where Damiano Tata had a sound performance using organ pipes.",
       "images": [
         {
