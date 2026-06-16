@@ -88,6 +88,30 @@ const rewriteContent = async (replacements) => {
   );
 };
 
+// Resize an image in place (overwrite the same file, keeping its name so that
+// references in the content JSON stay valid). Only used for images that are
+// larger than maxSize; already-optimized images are skipped to avoid
+// re-encoding them on every build.
+const optimizeInPlace = async (inputPath) => {
+  const ext = path.extname(inputPath).toLowerCase();
+  const tmpPath = `${inputPath}.tmp`;
+  let pipeline = sharp(inputPath).rotate().resize({
+    width: maxSize,
+    height: maxSize,
+    fit: "inside",
+    withoutEnlargement: true,
+  });
+
+  if (ext === ".jpg" || ext === ".jpeg") pipeline = pipeline.jpeg({ quality: 82, mozjpeg: true });
+  if (ext === ".png") pipeline = pipeline.png({ compressionLevel: 9, adaptiveFiltering: true });
+  if (ext === ".webp") pipeline = pipeline.webp({ quality: 82 });
+
+  await pipeline.toFile(tmpPath);
+  await fs.rename(tmpPath, inputPath);
+};
+
+// 1) Legacy flow: anything dropped into public/uploads gets optimized, moved
+//    into asset/web, and its references rewritten in the content JSON.
 const images = await listImages(uploadsDir);
 const replacements = new Map();
 
@@ -99,7 +123,29 @@ for (const image of images) {
 
 if (replacements.size > 0) {
   await rewriteContent(replacements);
-  console.log(`Optimized ${replacements.size} CMS image(s).`);
-} else {
-  console.log("No CMS uploads to optimize.");
+  console.log(`Optimized ${replacements.size} legacy upload(s) from public/uploads.`);
+}
+
+// 2) Current flow: the CMS uploads straight into asset/web. Resize any image
+//    that is still larger than maxSize, in place, leaving its path unchanged.
+const webImages = await listImages(webDir);
+let resized = 0;
+
+for (const image of webImages) {
+  try {
+    const { width, height } = await sharp(image).metadata();
+    if ((width ?? 0) > maxSize || (height ?? 0) > maxSize) {
+      await optimizeInPlace(image);
+      resized += 1;
+      console.log(`Resized ${path.relative(root, image)} (${width}x${height} -> max ${maxSize}px).`);
+    }
+  } catch (error) {
+    console.warn(`Skipped ${path.relative(root, image)}: ${error.message}`);
+  }
+}
+
+if (replacements.size === 0 && resized === 0) {
+  console.log("No images to optimize.");
+} else if (resized > 0) {
+  console.log(`Resized ${resized} oversized image(s) in asset/web.`);
 }
