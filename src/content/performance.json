@@ -19,7 +19,7 @@
     },
     "masksText": "The new masks were designed by Asia Castagna but only used for the promotional campaign.",
     "masksImage": {
-      "src": "/asset/web/_FHD6251.JPG",
+      "src": "",
       "rotation": 0
     },
     "stills": [
@@ -78,11 +78,15 @@
     "images": [
       {
         "src": "/asset/web/Photo2252.jpg",
-        "rotation": 90
+        "rotation": 0
       },
       {
         "src": "/asset/web/Photo2254.jpg",
-        "rotation": 90
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/Photo2279.jpg",
+        "rotation": 0
       }
     ],
     "innereAugeText": "Pictures of the performance Inneres Auge, created with the percussion artist Andrea Donvito, in an improvisation practice that started with the breathing and the reaching of an inner eye.",
@@ -92,7 +96,7 @@
         "rotation": 0
       },
       {
-        "src": "/asset/web/DSC08968.jpg",
+        "src": "/asset/web/_FHD7612.JPG",
         "rotation": 0
       }
     ],
@@ -104,6 +108,10 @@
       },
       {
         "src": "/asset/web/DSC08966.jpg",
+        "rotation": 0
+      },
+      {
+        "src": "/asset/web/DSC08968.jpg",
         "rotation": 0
       }
     ]
