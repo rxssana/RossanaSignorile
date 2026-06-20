@@ -41,7 +41,7 @@ collections:
                 name: starImage
                 widget: object
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -55,7 +55,7 @@ collections:
                 name: moonImage
                 widget: object
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -69,7 +69,7 @@ collections:
                 name: angelImage
                 widget: object
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -92,7 +92,7 @@ collections:
                 name: darkTexture
                 widget: object
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -106,7 +106,7 @@ collections:
                 name: lightTexture
                 widget: object
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -140,7 +140,7 @@ collections:
                 widget: object
                 required: false
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -155,7 +155,7 @@ collections:
                 widget: object
                 required: false
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -169,7 +169,7 @@ collections:
                 name: stills
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -191,7 +191,7 @@ collections:
                 name: stills
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -220,7 +220,7 @@ collections:
                 widget: object
                 required: false
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -235,7 +235,7 @@ collections:
                 name: stills
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -276,7 +276,7 @@ collections:
                 name: images
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -309,7 +309,7 @@ collections:
                 name: poster
                 widget: object
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -324,7 +324,7 @@ collections:
                 name: masksImage
                 widget: object
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -338,7 +338,7 @@ collections:
                 name: stills
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -365,7 +365,7 @@ collections:
                 name: images
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -385,7 +385,7 @@ collections:
                 name: images
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -400,7 +400,7 @@ collections:
                 name: innereAugeImages
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -415,7 +415,7 @@ collections:
                 name: asterionImages
                 widget: list
                 fields:
-                  - { label: Image, name: src, widget: image, choose_url: true, required: false }
+                  - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
                   - label: Rotation
                     name: rotation
                     widget: select
@@ -435,7 +435,7 @@ collections:
             name: portrait
             widget: object
             fields:
-              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
               - label: Rotation
                 name: rotation
                 widget: select
@@ -449,7 +449,7 @@ collections:
             name: working
             widget: object
             fields:
-              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
               - label: Rotation
                 name: rotation
                 widget: select
@@ -471,7 +471,7 @@ collections:
             name: flower
             widget: object
             fields:
-              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
               - label: Rotation
                 name: rotation
                 widget: select
@@ -485,7 +485,7 @@ collections:
             name: darkFlower
             widget: object
             fields:
-              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
               - label: Rotation
                 name: rotation
                 widget: select
@@ -506,7 +506,7 @@ collections:
             name: zineImages
             widget: list
             fields:
-              - { label: Image, name: src, widget: image, choose_url: true, required: false }
+              - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
               - label: Rotation
                 name: rotation
                 widget: select
