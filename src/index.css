@@ -178,11 +178,14 @@ h1, h2, h3, h4, h5, h6 {
   background: #666;
 }
 
-/* Render the site larger by default on desktop — reproduces a ~125% browser zoom
-   so the layout looks the way it does at 125% even at the browser's default 100%.
-   Scoped to the desktop layout (>=48rem) so the mobile layout is unaffected. */
+/* Fluid base type size — scales the whole layout smoothly with the viewport so
+   it adapts to whatever screen is viewing it, instead of the old `zoom: 1.25`.
+   That fixed zoom desynced the responsive breakpoints from the visual size and
+   fought the browser's/OS's own zoom. Every rem/clamp-based size below scales
+   from this. Mobile keeps the 16px base set on `html` above.
+   ~18px @ 768px wide → ~20px @ 1440px → caps at 22.4px on very wide screens. */
 @media (min-width: 48rem) {
-  :root {
-    zoom: 1.25;
+  html {
+    font-size: clamp(1rem, 0.95rem + 0.35vw, 1.4rem);
   }
 }
