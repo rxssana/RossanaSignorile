@@ -386,10 +386,18 @@
       "folder": "07_appeso_attesa_wip",
       "title": "7. Appeso, attesa (work in progress)",
       "subtitle": "",
-      "description": "An imaginative interpretation of the tarot card Le pendu, where the feeling of waiting is only the purpose of a more intentional digging for meaning. It is i\n\nMaterials: black wax, strings, white wax, iron wire, cotton",
+      "description": "An imaginative interpretation of the tarot card Le pendu, where the feeling of waiting is only the purpose of a more intentional digging for meaning. It is imagined to be hanging somewhere and letting it be destroyed by the surroundings.\n\nMaterials: black wax, strings, white wax, iron wire, cotton",
       "images": [
         {
           "src": "/asset/web/_FHD8408.JPG",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD8402-3.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD8404.JPG",
           "rotation": 0
         }
       ]
