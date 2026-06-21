@@ -214,7 +214,7 @@
       "folder": "03_birdland_magic_box",
       "title": "3. Birdland Magic Box",
       "subtitle": "",
-      "description": "A sort of noise box made of copper paper. It contains objects inside and a string made with my hair, it makes noise when connected to a mic.",
+      "description": "A sort of noise box made of copper paper. It contains objects inside and a string made with my hair, it makes noise when connected to a microphone.",
       "images": [
         {
           "src": "/asset/web/_FHD7949.JPG",
@@ -281,7 +281,7 @@
           "rotation": 0
         },
         {
-          "src": "/asset/web/0024_unicorn.jpg",
+          "src": "/asset/web/photo_5915655428732209032_y2.jpg",
           "rotation": 0
         },
         {
@@ -321,7 +321,7 @@
           "rotation": 0
         },
         {
-          "src": "/asset/web/Senza titolo-1.jpg",
+          "src": "/asset/web/IMG_20260329_115619_3.jpg",
           "rotation": 0
         },
         {
@@ -329,11 +329,11 @@
           "rotation": 0
         },
         {
-          "src": "/asset/web/0026_26Amodif.jpg",
+          "src": "/asset/web/IMG_20260329_115641_2.jpg",
           "rotation": 0
         },
         {
-          "src": "/asset/web/_DSC0354.jpg",
+          "src": "/asset/web/photo_5774017801134738979_y.jpg",
           "rotation": 0
         },
         {
@@ -351,7 +351,20 @@
       "title": "5. Theatre of the starving angel",
       "subtitle": "",
       "description": "A theater made of wood, which contains some creatures made of mud, wood pieces, and other magical objects. The walls are changeable and there's a long stair coming out of the theatre. The theatre folds like a box, to be carried everywhere.",
-      "images": []
+      "images": [
+        {
+          "src": "/asset/web/photo_6014705891501870139_y.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/photo_6014705891501870143_y.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/photo_6014705891501870149_y.jpg",
+          "rotation": 0
+        }
+      ]
     },
     {
       "folder": "06_puppets_wip",
@@ -374,21 +387,36 @@
       "title": "7. Appeso, attesa (work in progress)",
       "subtitle": "",
       "description": "",
-      "images": []
+      "images": [
+        {
+          "src": "",
+          "rotation": 0
+        }
+      ]
     },
     {
       "folder": "08_cipa_nonpa_cipi",
       "title": "8. Cipa, nonpa, cipi, nonpa, cipi — non partecipi alla danza?",
       "subtitle": "",
       "description": "",
-      "images": []
+      "images": [
+        {
+          "src": "/asset/web/_FHD8459.JPG",
+          "rotation": 0
+        }
+      ]
     },
     {
       "folder": "09_uno_studio_sull_impermanenza",
       "title": "9. Uno studio sull' Impermanenza",
       "subtitle": "",
       "description": "",
-      "images": []
+      "images": [
+        {
+          "src": "/asset/web/_FHD8419.JPG",
+          "rotation": 0
+        }
+      ]
     }
   ]
 }
