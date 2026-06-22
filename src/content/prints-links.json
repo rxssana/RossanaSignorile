@@ -15,7 +15,7 @@
     }
   ],
   "printNote": "also any artwork from the Birdland can be printed.",
-  "prices": "A3 - 5€ · A4 - 7€ · A5 - 10€",
+  "prices": "A3 - 5€ · A4 - 10€ · A5 - 15€",
   "links": [
     {
       "title": "Rossana Signorile - The Film-Makers' Cooperative",
@@ -32,25 +32,32 @@
       "note": ""
     },
     {
-      "title": "https://www.youtube.com/@ArchaicDirge",
+      "title": "Archaic Dirge profile [link]",
       "subtitle": "",
       "url": "https://www.youtube.com/@ArchaicDirge",
       "featured": false,
       "note": ""
     },
     {
-      "title": "https://www.youtube.com/@rxssanaa",
+      "title": "Youtube [link]",
       "subtitle": "",
       "url": "https://www.youtube.com/@rxssanaa",
       "featured": false,
       "note": ""
     },
     {
-      "title": "https://www.youtube.com/watch?v=OC1s07q6yAE",
+      "title": "Schiuma - Grido [videoclip link]",
       "subtitle": "",
       "url": "https://www.youtube.com/watch?v=OC1s07q6yAE",
       "featured": false,
       "note": "[Grido videoclip, which includes her artwork]"
+    },
+    {
+      "title": "Running from the machine [videoclip]",
+      "subtitle": "",
+      "url": "https://www.youtube.com/watch?v=U6C_i8n-xvE",
+      "featured": false,
+      "note": ""
     }
   ]
 }
