@@ -64,7 +64,7 @@ export function Performance() {
             </div>
           </div>
 
-          <div className="mt-10 items-center gap-8 md:flex">
+          <div className="mt-10 items-start gap-8 md:flex">
             <p className="text-sm italic font-light text-[#ccc] md:w-1/2">
               {performanceContent.ballad.masksText}
             </p>
