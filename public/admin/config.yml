@@ -286,6 +286,28 @@ collections:
                       - { label: "90°", value: 90 }
                       - { label: "180°", value: 180 }
                       - { label: "270°", value: 270 }
+              - label: Subsections
+                name: subsections
+                widget: list
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text, required: false }
+                  - label: Images
+                    name: images
+                    widget: list
+                    fields:
+                      - { label: Image, name: src, widget: image, choose_url: true, required: false, preview: false }
+                      - label: Rotation
+                        name: rotation
+                        widget: select
+                        default: 0
+                        options:
+                          - { label: "0°", value: 0 }
+                          - { label: "90°", value: 90 }
+                          - { label: "180°", value: 180 }
+                          - { label: "270°", value: 270 }
 
       - name: performance
         label: Performance
