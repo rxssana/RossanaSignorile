@@ -21,7 +21,7 @@ function Gallery({
           alt="performance still"
           loading="lazy"
           onClick={() => openLightbox(images, i)}
-          className="w-full cursor-zoom-in object-cover opacity-85 transition-opacity hover:opacity-100"
+          className="aspect-[4/3] w-full cursor-zoom-in object-cover opacity-85 transition-opacity hover:opacity-100"
           style={mediaStyle(img)}
         />
       ))}
