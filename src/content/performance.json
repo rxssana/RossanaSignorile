@@ -19,8 +19,8 @@
     },
     "masksText": "The new masks were designed by Asia Castagna but only used for the promotional campaign.",
     "masksImage": {
-      "src": "",
-      "rotation": 0
+      "src": "/asset/web/photo_5855028026864160297_y.jpg",
+      "rotation": 90
     },
     "stills": [
       {
@@ -40,7 +40,7 @@
         "rotation": 0
       },
       {
-        "src": "/asset/web/photo_5855028026864160297_y.jpg",
+        "src": "/asset/web/photo_5855028026864160296_y.jpg",
         "rotation": 90
       }
     ]
@@ -74,7 +74,7 @@
   },
   "butoh": {
     "title": "Butoh performance",
-    "intro": "Performances that took place during Ezio Tangini's butoh workshop in Viareggio.",
+    "intro": "Performances that took place during Ezio Tangini's butoh workshop in Viareggio.\n\nCreate time and space.",
     "images": [
       {
         "src": "/asset/web/Photo2252.jpg",
