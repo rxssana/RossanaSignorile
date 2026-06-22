@@ -21,7 +21,7 @@ function Gallery({
           alt="performance still"
           loading="lazy"
           onClick={() => openLightbox(images, i)}
-          className="aspect-[4/3] w-full cursor-zoom-in object-cover opacity-85 transition-opacity hover:opacity-100"
+          className="aspect-square w-full cursor-zoom-in object-cover opacity-85 transition-opacity hover:opacity-100"
           style={mediaStyle(img)}
         />
       ))}
@@ -64,16 +64,21 @@ export function Performance() {
             </div>
           </div>
 
-          <div className="mt-10 items-start gap-8 md:flex">
-            <p className="text-sm italic font-light text-[#ccc] md:w-1/2">
+          <div className="mt-10 md:mx-auto md:w-1/2">
+            <p className="text-sm italic font-light text-[#ccc]">
               {performanceContent.ballad.masksText}
             </p>
+            {/* This photo is rotated 90° in the CMS (portrait source shown as
+                landscape). A CSS-rotated image still reserves its upright, taller
+                footprint, which leaves a large empty band above it. The negative
+                top margin (proportional to width, so it holds at any size) pulls
+                the visible image back up under the caption. */}
             <img
               src={mediaAsset(performanceContent.ballad.masksImage)}
               alt="Promotional masks by Asia Castagna"
               loading="lazy"
               onClick={() => openLightbox(performanceContent.ballad.masksImage)}
-              className="mt-4 w-full cursor-zoom-in object-cover md:mt-0 md:w-1/2"
+              className="-mt-[11%] w-full cursor-zoom-in object-cover"
               style={mediaStyle(performanceContent.ballad.masksImage)}
             />
           </div>
