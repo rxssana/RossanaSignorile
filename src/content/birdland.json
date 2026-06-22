@@ -215,6 +215,10 @@
         {
           "src": "/asset/web/_FHD8001.JPG",
           "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD7984.JPG",
+          "rotation": 0
         }
       ]
     },
@@ -465,6 +469,33 @@
           "rotation": 0
         }
       ]
+    },
+    {
+      "folder": "10_erosione",
+      "title": "Erosione",
+      "subtitle": "",
+      "extraTexts": [],
+      "credits": [],
+      "description": "La pratica del lasciar andare - esempio.",
+      "images": [
+        {
+          "src": "/asset/web/_FHD7445.JPG",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD7450.JPG",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD7462.JPG",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD7478.JPG",
+          "rotation": 0
+        }
+      ],
+      "subsections": []
     }
   ]
 }
