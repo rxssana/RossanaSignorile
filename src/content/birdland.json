@@ -508,6 +508,37 @@
         }
       ],
       "subsections": []
+    },
+    {
+      "folder": "11_mostra_collettiva_inner_child",
+      "title": "How do you keep your inner child alive?",
+      "subtitle": "Pozza dei desideri",
+      "extraTexts": [],
+      "credits": [],
+      "description": "Opera realizzata in occasione della mostra organizzata dal Nadja Collective presso Kodomo, a Roma, sul tema del bambino interiore. Il luogo in cui si depositano i miei desideri è una pozione magica. Tenere vivo uno sguardo attento sul mondo, interno ed esterno, su ciò che mi circonda e continuare a non comprenderlo, dargli una forma interiore. Collezionare, nominare, mettere insieme, così facendo le mie mani sono vive e le possibilità sono infinite. Per entrare nella casa di mia nonna c'è sempre stata una di quelle tende che non permettono alle zanzare o le mosche di entrare, il loro suono è diventato con il tempo qualcosa di talmente familiare. L'opera è pensata come oggetto di ricognizione mentale, reso partecipativo con la proposta di lasciare un oggetto e far parte del ricordo. Materiali: cartapesta, conchiglie, rametti, corteccia, colla, nylon e più.",
+      "images": [
+        {
+          "src": "/asset/web/photo_5922417120304107258_y.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/photo_5922417120304107257_y.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/photo_5922417120304107251_y.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/photo_5922417120304107259_y.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/photo_5922417120304107251_y.jpg",
+          "rotation": 0
+        }
+      ],
+      "subsections": []
     }
   ]
 }
