@@ -551,6 +551,49 @@
         }
       ],
       "subsections": []
+    },
+    {
+      "folder": "12_textile_memory_book",
+      "title": "Ho navigato per le strade dell’inconscio",
+      "subtitle": "",
+      "extraTexts": [],
+      "credits": [],
+      "description": "Nei tre anni vissuti a Roma ho accumulato oggetti, memorie, sentimenti. Ho cucito insieme una serie di pagine, elementi, parole, che mi riportano a questi tre anni. Alcuni son stati trovati per terra, in giro, altri son stati creati, rimodellati. E’ una linea del tempo frammentaria, ma che contiene tutte le possibilità di un tempo da ricostruire, più esterno che interno.",
+      "images": [
+        {
+          "src": "/asset/web/_FHD9310.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD9311.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD9312.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD9313.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD9314.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD9315.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD9316.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/_FHD9317.jpg",
+          "rotation": 0
+        }
+      ],
+      "subsections": []
     }
   ]
 }
