@@ -163,6 +163,36 @@
         }
       ],
       "dark": false
+    },
+    {
+      "title": "À la guerre comme à la guerre",
+      "year": "2026",
+      "format": "Super8, 14'",
+      "description": "L'archivio come pretesto per raggiungere una materia passata, originaria e antecedente al\ndisastro che ha caratterizzato e continua ad attraversare la vita degli individui in questo\nmondo, costretti a rinnegare la propria forma più pura.",
+      "credits": [
+        "Archive by Rossana Signorile, Andrea Donvito, Donato Grandieri",
+        "Music by Gat Osken"
+      ],
+      "poster": {
+        "src": "/asset/web/poster1.jpg",
+        "rotation": 0
+      },
+      "feature": null,
+      "stills": [
+        {
+          "src": "/asset/web/Still 2026-08-26 163415_8.1.5.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2026-09-04 194321_8.1.25.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/Still 2026-09-04 194321_8.1.13.jpg",
+          "rotation": 0
+        }
+      ],
+      "dark": false
     }
   ],
   "biffiEBaffi": {
