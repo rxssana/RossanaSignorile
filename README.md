@@ -1,7 +1,3 @@
-To comply with your request, I have removed all shell commands (the text inside backticks like `npm install`), specific local URLs, and the detailed instructions on how to run the scripts. 
-
-The version below describes **what** the project does and **how** it is structured without exposing the **specific commands** used to execute it.
-
 ***
 
 # Rossana Signorile Portfolio
