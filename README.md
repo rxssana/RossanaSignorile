@@ -1,75 +1,37 @@
+To comply with your request, I have removed all shell commands (the text inside backticks like `npm install`), specific local URLs, and the detailed instructions on how to run the scripts. 
 
+The version below describes **what** the project does and **how** it is structured without exposing the **specific commands** used to execute it.
+
+***
 
 # Rossana Signorile Portfolio
 
 This repository contains the portfolio website for Rossana Signorile, built with React and Vite and prepared for deployment on GitHub Pages.
 
-## Run Locally
+## Local Development
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+To run this project locally, you will need to install the project dependencies and start the development server using the provided scripts in the package configuration.
 
-1. Install dependencies:
-   `npm install`
-2. Run the app:
-   `npm run dev`
+## Content Management
 
-## Edit Content Locally
+The site content can be managed using Decap CMS. 
 
-The site content can be edited with Decap CMS.
+### Local Editing
+The site supports a local CMS proxy. You can configure the proxy to use a GitHub Personal Access Token (PAT) by setting up environment variables. The project is configured to ignore environment files to ensure that sensitive tokens are not committed to the repository. 
 
-1. Start the local CMS proxy:
-   `npm run cms`
+Once the proxy and the local site are running, you can access the editor via the local admin URL. Editable content is stored in JSON files within the source directory, and images uploaded via the CMS are handled in the public directory.
 
-If you want to authenticate the local proxy with a GitHub Personal Access Token (PAT) instead of using a hosted auth provider, do the following:
+### GitHub Integration
+The CMS is configured for the Decap GitHub backend. Editors must have push access to the repository. For authentication, use a supported Decap GitHub auth setup (such as a Netlify GitHub auth bridge) to keep client secrets secure.
 
-- Copy `.env.example` to `.env` and set `GITHUB_TOKEN` to a PAT with `repo` scope.
-- Run the authenticated proxy with:
+## Image Processing
+New images uploaded through the CMS are automatically committed to the public directory. During the deployment workflow, the system automatically optimizes these images by resizing them to a web-friendly maximum resolution, updating the content paths, and committing the optimized assets before the final build.
 
-```bash
-npm run cms:auth
-```
+## Build & Deployment
 
-This will load `GITHUB_TOKEN` from `.env` and start the local Decap proxy. `.env` is included in `.gitignore` so the token won't be committed.
-2. In another terminal, start the site:
-   `npm run dev:local`
-3. Open the editor:
-   `http://localhost:3000/admin/index.html`
+The project includes configurations for production builds and multiple deployment targets.
 
-Click **Login** once. In local mode it uses the local proxy, not a real account.
-
-Editable content lives in `src/content/*.json`. Images uploaded in the CMS are saved to `public/uploads`.
-
-## Edit Content on GitHub
-
-The CMS config is prepared for the Decap GitHub backend:
-
-- Repo: `rxssana/RossanaSignorile`
-- Branch: `main`
-- Admin URL after deployment: `https://rxssana.github.io/RossanaSignorile/admin/index.html`
-
-Editors must have push access to the GitHub repository. GitHub login also requires an OAuth/auth provider; do not commit OAuth secrets to this repository. Use a supported Decap GitHub auth setup, such as Netlify's GitHub auth bridge or another OAuth service, then keep the client secret in that provider.
-
-## CMS Image Uploads
-
-New images uploaded through Decap are committed to `public/uploads` first. On GitHub, the deploy workflow runs:
-
-`npm run optimize:cms-images`
-
-That command resizes uploaded images to a web-friendly maximum of 1600px, writes them into `asset/web`, rewrites the content JSON paths from `/uploads/...` to `/asset/web/...`, and commits the optimized result before building the site.
-
-## Build
-
-Run a production build with:
-
-`npm run build`
-
-## Deploy
-
-The repository keeps GitHub Pages as the backup deploy target.
-
-Firebase Hosting is also configured in the repo. If you want to deploy there, use the separate Firebase workflow or the Firebase CLI.
-
-Note: Firebase Hosting can stay on the free plan, but the Decap login Function needs Blaze if you want that endpoint to run on Firebase.
-
-GitHub Pages still deploys when changes are pushed to `main`.
+- **GitHub Pages:** The primary backup deployment target, triggered automatically when changes are pushed to the main branch.
+- **Firebase Hosting:** The repository includes configuration for Firebase. Note that specific features, such as certain login functions, may require a specific billing plan on Firebase.
