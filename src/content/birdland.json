@@ -628,6 +628,29 @@
         }
       ],
       "subsections": []
+    },
+    {
+      "folder": "13_booklet_Gat_Osken",
+      "title": "Baratri d'Azzurro e Pozzi di Fuoco",
+      "subtitle": "",
+      "extraTexts": [],
+      "credits": [],
+      "description": "“Baratri d'Azzurro e Pozzi di Fuoco” is the debut album by the Italian instrumental duo Gat Osken, featuring Andrea Donvito on drums and Costantino Temerario on electric guitar. \nThe duo’s musical practice is a restless sonic dialogue that moves between post-rock layers, percussive ecstasy, noir math and self-prepared instruments.\n\nThe booklet is an 8-page, personal and free, illustrated interpretation of their sounds, blending different techniques and using bones, stones, shadows and light to transform the void into blue light.\n\nComposed, arranged and performed by Gat Osken\nRecorded, mixed and mastered by Davide Fumai\nArtwork by Francesca Ammaturo\nPhotography by Andrea Donvito\nBooklet design and Cyanotype Illustrations by Rossana Signorile",
+      "images": [
+        {
+          "src": "/asset/web/2.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/7.jpg",
+          "rotation": 0
+        },
+        {
+          "src": "/asset/web/0047698239_10.jpg",
+          "rotation": 0
+        }
+      ],
+      "subsections": []
     }
   ]
 }
